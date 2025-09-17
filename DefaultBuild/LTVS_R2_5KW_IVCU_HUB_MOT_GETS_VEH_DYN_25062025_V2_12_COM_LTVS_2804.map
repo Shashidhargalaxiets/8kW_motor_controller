@@ -1,0 +1,97 @@
+Renesas Optimizing Linker (W3.07.00 )             11-Jul-2025 14:54:43
+
+*** Options ***
+
+-subcommand=DefaultBuild\LTVS_R2_5KW_IVCU_HUB_MOT_GETS_VEH_DYN_25062025_V2_12_COM_LTVS_2804.clnk
+-input=DefaultBuild\boot.obj
+-input=DefaultBuild\cstart.obj
+-input=DefaultBuild\main.obj
+-input=DefaultBuild\Config_CGC.obj
+-input=DefaultBuild\Systeminit.obj
+-input=DefaultBuild\intvector.obj
+-input=DefaultBuild\DummyInt.obj
+-input=DefaultBuild\Config_ADC.obj
+-input=DefaultBuild\Config_PWM.obj
+-input=DefaultBuild\Config_PORT.obj
+-input=DefaultBuild\Config_OSTM.obj
+-input=DefaultBuild\Config_TAUB0_0.obj
+-input=DefaultBuild\Config_TAUB0_1.obj
+-input=DefaultBuild\Config_CAN.obj
+-input=DefaultBuild\CAN.obj
+-input=DefaultBuild\ADC_Result.obj
+-input=DefaultBuild\Register_Interface.obj
+-input=DefaultBuild\Sinusoidal_Mode.obj
+-input=DefaultBuild\Digital_Input_Read.obj
+-input=DefaultBuild\CAN_TX.obj
+-input=DefaultBuild\IO_Status.obj
+-debug
+-nocompress
+-NOOPtimize
+-output=DefaultBuild\LTVS_R2_5KW_IVCU_HUB_MOT_GETS_VEH_DYN_25062025_V2_12_COM_LTVS_2804.abs
+-library=v850e3v5\rhf4n.lib
+-library=v850e3v5\libmalloc.lib
+-list=DefaultBuild\LTVS_R2_5KW_IVCU_HUB_MOT_GETS_VEH_DYN_25062025_V2_12_COM_LTVS_2804.map
+-show=all
+-start=RESET/0,EIINTTBL.const/00000200,.const,.INIT_DSEC.const,.INIT_BSEC.const,.text,.data/00008000,.data.R,.bss,.stack.bss/FEDE8000
+-rom=.data=.data.R
+-nologo
+-end
+
+*** Error information ***
+
+E0562310:Undefined external symbol "_throttle_Read" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_sect_Deg" referenced in "DefaultBuild\Sinusoidal_Mode.obj"
+E0562310:Undefined external symbol "_dc_OC_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_id_MIN_LIM_MF" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_crus_throttle_Read_Act" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_inv_B_Ph_Temp_Cel" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_ac_I_B_Sens_HLTH_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_hall_Sens_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_sys_Stabli_Time" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_vd_SetPoint" referenced in "DefaultBuild\Sinusoidal_Mode.obj"
+E0562310:Undefined external symbol "_inv_Y_Ph_Temp_Cel" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_over_MOT_TEMP_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_throttle_Read_Act" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_throttle_Read_Act" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_over_INV_TEMP_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_flt_CLR" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_inv_R_Ph_Temp_Sens_HLTH_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_Motor_Run_Mode_Select" referenced in "DefaultBuild\Config_OSTM.obj"
+E0562310:Undefined external symbol "_inv_B_Ph_Temp_Sens_HLTH_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_ac_I_Y_Sens_HLTH_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_limpHome_Mode_Sens_STAT" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_dc_BUS_SC_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_r_Config_WDT0_interrupt" referenced in "DefaultBuild\intvector.obj"
+E0562310:Undefined external symbol "_tps_Sens_HLTH_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_R_Config_WDT0_Create" referenced in "DefaultBuild\main.obj"
+E0562310:Undefined external symbol "_dc_UV_Volt_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_dc_I_Sens_HLTH_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_PWM_MODE_Switch" referenced in "DefaultBuild\Sinusoidal_Mode.obj"
+E0562310:Undefined external symbol "_PWM_MODE_Switch" referenced in "DefaultBuild\Digital_Input_Read.obj"
+E0562310:Undefined external symbol "_inv_R_Ph_Temp_Cel" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_ele_Theta" referenced in "DefaultBuild\Sinusoidal_Mode.obj"
+E0562310:Undefined external symbol "_mot_NTC_Sens_HLTH_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_dc_OV_Volt_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_output_Power" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_mot_Phase_SC_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_ac_I_R_Sens_HLTH_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_Temp_Cal" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_speed_Ref_SI" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_torque_SAT_MAX" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_torque_SAT_MAX" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_vq_SetPoint" referenced in "DefaultBuild\Sinusoidal_Mode.obj"
+E0562310:Undefined external symbol "_R_Config_WDT0_Restart" referenced in "DefaultBuild\main.obj"
+E0562310:Undefined external symbol "_R_Config_WDT0_Restart" referenced in "DefaultBuild\Config_TAUB0_0.obj"
+E0562310:Undefined external symbol "_ps_Sens_HLTH_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_rev_Rotate_FLG" referenced in "DefaultBuild\Sinusoidal_Mode.obj"
+E0562310:Undefined external symbol "_mot_Temp_Cel" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_inv_Y_Ph_Temp_Sens_HLTH_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_crus_FLT_STAT" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_ph_I_OC_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_stall_Prot_FLT" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_speed_Derat_Val" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_speed_RPM" referenced in "DefaultBuild\Sinusoidal_Mode.obj"
+E0562310:Undefined external symbol "_speed_RPM" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_speed_RPM" referenced in "DefaultBuild\IO_Status.obj"
+E0562310:Undefined external symbol "_input_Power" referenced in "DefaultBuild\CAN_TX.obj"
+E0562310:Undefined external symbol "_sens_HLTH_OK_FLG" referenced in "DefaultBuild\IO_Status.obj"

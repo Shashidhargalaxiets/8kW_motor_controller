@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MicomToolCommonProjectFile Version="1.00">
+  <CreatorType Name="CubeSuite+" Version="V8.09.00  [12 Dec 2022]" />
+  <Placeholders>
+    <PlaceholderPrefix>%</PlaceholderPrefix>
+    <PlaceholderPostfix>%</PlaceholderPostfix>
+  </Placeholders>
+  <Project Name="PVNA_closed_loop_step" Type="Application">
+    <Files>
+      <Path>cstart.asm</Path>
+      <Path>main.c</Path>
+      <Path>boot.asm</Path>
+      <Path>iodefine.h</Path>
+      <Category Name="INTERRUPT_TIMER_1">
+        <Path>Config_OSTM.c</Path>
+        <Path>Config_OSTM.h</Path>
+        <Path>cg_ostm.h</Path>
+      </Category>
+      <Category Name="CLOCK">
+        <Path>Config_CGC.c</Path>
+        <Path>Config_CGC.h</Path>
+      </Category>
+      <Category Name="REGISTER_INTERFACE">
+        <Path>Register_Interface.h</Path>
+        <Path>Register_Interface.c</Path>
+      </Category>
+      <Category Name="DigitalFilter">
+        <Path>DigitalFilter.c</Path>
+        <Path>DigitalFilter.h</Path>
+      </Category>
+      <Category Name="MCAL_DRIVERS">
+        <Category Name="GPIO">
+          <Category Name="Config">
+            <Path>Config_PORT.c</Path>
+            <Path>Config_PORT.h</Path>
+            <Path>cg_port.h</Path>
+          </Category>
+          <Category Name="Static">
+            <Path>Digital_Input_Read.c</Path>
+            <Path>Digital_Input_Read.h</Path>
+          </Category>
+        </Category>
+        <Category Name="ADC">
+          <Category Name="Config">
+            <Path>Config_ADC.c</Path>
+            <Path>Config_ADC.h</Path>
+            <Path>cg_adc.h</Path>
+          </Category>
+          <Category Name="Static">
+            <Path>ADC_Result.c</Path>
+            <Path>ADC_Result.h</Path>
+          </Category>
+        </Category>
+        <Category Name="PWM">
+          <Category Name="Config">
+            <Path>Config_PWM.c</Path>
+            <Path>Config_PWM.h</Path>
+            <Path>cg_pwm.h</Path>
+          </Category>
+          <Category Name="Static">
+            <Path>PWM.c</Path>
+            <Path>PWM.h</Path>
+          </Category>
+        </Category>
+      </Category>
+      <Category Name="Application">
+        <Category Name="OpenLoop">
+          <Path>OpenLoop.c</Path>
+          <Path>OpenLoop.h</Path>
+        </Category>
+        <Category Name="STUBS">
+          <Path>AngleConversion.c</Path>
+          <Path>AngleConversion.h</Path>
+          <Path>Ramp.c</Path>
+          <Path>Ramp.h</Path>
+          <Path>Throttle_mapping.c</Path>
+          <Path>Throttle_mapping.h</Path>
+          <Category Name="Speed_RPM">
+            <Path>Speed.c</Path>
+            <Path>Speed.h</Path>
+          </Category>
+          <Category Name="Torque">
+            <Path>Torque_calculation.c</Path>
+            <Path>Torque_calculation.h</Path>
+          </Category>
+          <Category Name="Temperature">
+            <Path>Temperature_calculation.c</Path>
+            <Path>Temperature_calculation.h</Path>
+          </Category>
+        </Category>
+        <Category Name="Inverse_Park">
+          <Path>InversePark.c</Path>
+          <Path>InversePark.h</Path>
+        </Category>
+        <Category Name="Inverse_Clarke">
+          <Path>InverseClarke.c</Path>
+          <Path>InverseClarke.h</Path>
+        </Category>
+        <Category Name="SVPWM">
+          <Path>Svpwm.c</Path>
+          <Path>Svpwm.h</Path>
+        </Category>
+        <Category Name="Clarke">
+          <Path>Clarke.c</Path>
+          <Path>Clarke.h</Path>
+        </Category>
+        <Category Name="Park">
+          <Path>Park.c</Path>
+          <Path>Park.h</Path>
+        </Category>
+        <Category Name="PI_Controllers">
+          <Category Name="Torque_PI">
+            <Path>Torque.c</Path>
+            <Path>Torque.h</Path>
+          </Category>
+          <Category Name="Flux_PI">
+            <Path>Flux.c</Path>
+            <Path>Flux.h</Path>
+          </Category>
+          <Category Name="limiters">
+            <Path>voltage_limiter.c</Path>
+            <Path>voltage_limiter.h</Path>
+          </Category>
+          <Category Name="Speed_PI">
+            <Path>Speed_PI.c</Path>
+            <Path>Speed_PI.h</Path>
+          </Category>
+        </Category>
+        <Category Name="MTPA_FW">
+          <Path>MTPA.c</Path>
+          <Path>MTPA.h</Path>
+        </Category>
+      </Category>
+      <Category Name="New category" />
+      <Category Name="SupportiveFiles">
+        <Path>macrodriver.h</Path>
+        <Path>intvector.c</Path>
+        <Path>DummyInt.c</Path>
+        <Path>Systeminit.c</Path>
+      </Category>
+      <Category Name="TaskManager">
+        <Path>Task_100us.c</Path>
+        <Path>Task_100us.h</Path>
+      </Category>
+      <Category Name="Resolver">
+        <Path>Resolver.c</Path>
+        <Path>Resolver.h</Path>
+      </Category>
+    </Files>
+    <DebugOptions>
+      <ConnectSettings>
+        <MainClock>16000000</MainClock>
+      </ConnectSettings>
+      <DebugToolSettings />
+    </DebugOptions>
+    <Device Series="RH850">R7F701684</Device>
+    <BuildOptions Name="CC-RH" Version="V2.05.00">
+      <BuildMode Name="DefaultBuild" Active="True">
+        <LinkOrder>
+          <Path>DefaultBuild\boot.obj</Path>
+          <Path>DefaultBuild\cstart.obj</Path>
+          <Path>DefaultBuild\main.obj</Path>
+          <Path>DefaultBuild\Config_CGC.obj</Path>
+          <Path>DefaultBuild\Systeminit.obj</Path>
+          <Path>DefaultBuild\intvector.obj</Path>
+          <Path>DefaultBuild\DummyInt.obj</Path>
+          <Path>DefaultBuild\Config_ADC.obj</Path>
+          <Path>DefaultBuild\Config_PWM.obj</Path>
+          <Path>DefaultBuild\Config_PORT.obj</Path>
+          <Path>DefaultBuild\Config_OSTM.obj</Path>
+          <Path>DefaultBuild\ADC_Result.obj</Path>
+          <Path>DefaultBuild\Register_Interface.obj</Path>
+          <Path>DefaultBuild\Digital_Input_Read.obj</Path>
+          <Path>DefaultBuild\DigitalFilter.obj</Path>
+          <Path>DefaultBuild\PWM.obj</Path>
+          <Path>DefaultBuild\OpenLoop.obj</Path>
+          <Path>DefaultBuild\AngleConversion.obj</Path>
+          <Path>DefaultBuild\InversePark.obj</Path>
+          <Path>DefaultBuild\InverseClarke.obj</Path>
+          <Path>DefaultBuild\Svpwm.obj</Path>
+          <Path>DefaultBuild\Task_100us.obj</Path>
+          <Path>DefaultBuild\Resolver.obj</Path>
+          <Path>DefaultBuild\Clarke.obj</Path>
+          <Path>DefaultBuild\Park.obj</Path>
+          <Path>DefaultBuild\Torque.obj</Path>
+          <Path>DefaultBuild\Flux.obj</Path>
+          <Path>DefaultBuild\voltage_limiter.obj</Path>
+          <Path>DefaultBuild\Ramp.obj</Path>
+          <Path>DefaultBuild\Speed.obj</Path>
+          <Path>DefaultBuild\Torque_calculation.obj</Path>
+          <Path>DefaultBuild\MTPA.obj</Path>
+          <Path>DefaultBuild\Throttle_mapping.obj</Path>
+          <Path>DefaultBuild\Temperature_calculation.obj</Path>
+          <Path>DefaultBuild\Speed_PI.obj</Path>
+        </LinkOrder>
+        <CommonOptions>
+          <IncludePathForC>C:\Users\Naveen Kumar P\Downloads</IncludePathForC>
+          <IncludePathForC>.</IncludePathForC>
+        </CommonOptions>
+        <GeneralOptions>
+          <SimultaneouslyBuild>False</SimultaneouslyBuild>
+        </GeneralOptions>
+        <CompileOptions>
+          <Option>-Xobj_path=%BuildModeName%</Option>
+          <Option>-Xcpu=g3kh</Option>
+          <Option>-g</Option>
+          <Option>-g_line</Option>
+          <Option>"-IC:\Users\Naveen Kumar P\Downloads"</Option>
+          <Option>-I.</Option>
+          <Option>-Xdbl_size=4</Option>
+          <Option>-c</Option>
+        </CompileOptions>
+        <AssembleOptions>
+          <Option>-Xobj_path=%BuildModeName%</Option>
+          <Option>-Xcpu=g3kh</Option>
+          <Option>-g</Option>
+          <Option>-c</Option>
+        </AssembleOptions>
+        <LinkOptions>
+          <Option>-debug</Option>
+          <Option>-nocompress</Option>
+          <Option>-NOOPtimize</Option>
+          <Option>-output=%BuildModeName%\%ProjectName%.abs</Option>
+          <Option>-library=v850e3v5\rhf4n.lib</Option>
+          <Option>-library=v850e3v5\libmalloc.lib</Option>
+          <Option>-list=%BuildModeName%\%ProjectName%.map</Option>
+          <Option>-show=all</Option>
+          <Option>-start=RESET/0,EIINTTBL.const/00000200,.const,.INIT_DSEC.const,.INIT_BSEC.const,.text,.data/00008000,.data.R,.bss,.stack.bss/FEDE8000</Option>
+          <Option>-rom=.data=.data.R</Option>
+          <Option>-nologo</Option>
+          <Option>-END</Option>
+          <Option>-Input=%BuildModeName%\%ProjectName%.abs</Option>
+          <Option>-output=%BuildModeName%\%ProjectName%.mot</Option>
+          <Option>-form=stype</Option>
+          <Option>-EXIt</Option>
+        </LinkOptions>
+        <IOHeaderGenerationOptions>
+          <Option>"-df=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RH850\Devicefile\DR7F701684.DVF"</Option>
+          <Option>"-o=C:\Users\SHAMITHA V G\Desktop\PVNA_close_loop_MTPA\PVNA_01_closed_loop_Speed_PI_old_motor_implementation_25_08_2025\PVNA_01\iodefine.h"</Option>
+          <Option>-def=off</Option>
+          <Option>-f</Option>
+          <UpdateIOMode>None</UpdateIOMode>
+        </IOHeaderGenerationOptions>
+      </BuildMode>
+    </BuildOptions>
+    <Extension_SmcCodePartRH850>
+      <CodeGeneratorData></CodeGeneratorData>
+      <GenerateFileFolder>D:\MAHESH KUMAR P\MAHESH\LUCAS\5_WIP\4_Code\LUCAS_TVS_5KW_IVCU_HUB_MOTOR_21052024\LUCAS_TVS_5KW_IVCU_HUB_MOTOR_21052024_V0</GenerateFileFolder>
+      <SCFGFile>LUCAS_TVS_5KW_IVCU_HUB_MOTOR_21052024_V0.scfg</SCFGFile>
+      <SmcExePath>C:\Program Files (x86)\Renesas Electronics\SmartConfigurator\RH850\eclipse\SmartConfigurator.exe</SmcExePath>
+      <CodeGeneratorFilesGuid>52e2601f-12de-4806-9b5b-8c47ef7999c0</CodeGeneratorFilesGuid>
+    </Extension_SmcCodePartRH850>
+  </Project>
+</MicomToolCommonProjectFile>

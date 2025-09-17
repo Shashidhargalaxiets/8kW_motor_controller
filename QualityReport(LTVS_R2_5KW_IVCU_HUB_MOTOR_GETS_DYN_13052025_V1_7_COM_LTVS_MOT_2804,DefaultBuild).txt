@@ -1,0 +1,218 @@
+QualityReport
+Tuesday, May 13, 2025 3:57:48 PM
+
+------ Start build(LTVS_R2_5KW_IVCU_HUB_MOTOR_GETS_DYN_13052025_V1_7_COM_LTVS_MOT_2804, DefaultBuild) ------
+------ Build ended(Error:0, Warning:0)(LTVS_R2_5KW_IVCU_HUB_MOTOR_GETS_DYN_13052025_V1_7_COM_LTVS_MOT_2804, DefaultBuild) ------
+
+
+--- SHA1 hash value of output files ---
+D:\MAHESH KUMAR P\MAHESH\GALAXI\MOTOR_CONTROL_PROJECTS\1_RENESAS_Base\03_WIP\1_CODE\LTVS_MOTOR_TEST\4_LTVS_R2_HUB_MOT_GETS_13052025_V1_7_COM_LTVS_MOT_2804\DefaultBuild\LTVS_R2_5KW_IVCU_HUB_MOTOR_GETS_DYN_13052025_V1_7_COM_LTVS_MOT_2804.abs: 22bf8d4bb602e17c09d1d33273552ee644b0cbe8
+D:\MAHESH KUMAR P\MAHESH\GALAXI\MOTOR_CONTROL_PROJECTS\1_RENESAS_Base\03_WIP\1_CODE\LTVS_MOTOR_TEST\4_LTVS_R2_HUB_MOT_GETS_13052025_V1_7_COM_LTVS_MOT_2804\DefaultBuild\LTVS_R2_5KW_IVCU_HUB_MOTOR_GETS_DYN_13052025_V1_7_COM_LTVS_MOT_2804.mot: c2da2ff9c861a367789b42d22101b51d613c0e22
+
+
+--- System Information ---
+*OS Version
+ Microsoft Windows 10 Pro (-, 10.0.19045, WOW64)
+*Language
+ English (United States)
+*.NET Framework Version
+ Microsoft .NET Framework 4 [.NET 4.8 or later] (533325)
+
+--- Application Information ---
+*Product Name
+ CS+ for CC
+*Package Version
+ V8.10.00  [06 Jun 2023]
+*Version
+ V9.10.00.03 [23 May 2023]
+*Assembly Version
+ 3.12.10.1
+*Sales Area
+ Global
+*Product License
+ 
+*Execution Place
+ C:\Program Files (x86)\Renesas Electronics\CS+\CC
+*Memory Usage
+ *Private Working Set
+  564 MB
+ *Number of GDI Objects
+  2138
+ *Number of USER Objects
+  1445
+ *Opened Files
+  38 editors, 38 files, 387 KB
+
+--- Build Tool Plug-in Information ---
+RH850 Build tool CC-RH Plug-in
+ *Version
+  V8.09.00.00 [07 Oct 2022]
+ *Assembly Version
+  1.1.10.12
+ *DLL File Name
+  BuildToolCCRH.dll
+RL78 Build tool CC-RL Plug-in
+ *Version
+  V8.09.00.01 [07 Oct 2022]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  BuildToolCCRL.dll
+RX Build tool CC-RX Plug-in
+ *Version
+  V8.09.00.00 [07 Oct 2022]
+ *Assembly Version
+  3.12.10.1
+ *DLL File Name
+  BuildToolCCRX.dll
+RH850 Build tool GHS CCRH850 Plug-in
+ *Version
+  V1.08.00.00 [03 Apr 2023]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  BuildToolGHSCCRH850.dll
+
+--- Debug Tool Plug-in Information ---
+Debugger Collection Plug-in
+ *Version
+  V8.10.00.02 [12 May 2023]
+ *Assembly Version
+  2.12.10.1
+ *DLL File Name
+  DebugToolCollection.dll
+
+--- Other Plug-in Information ---
+Code Generator Plug-in for RH850(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Code Generator Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Code Generator/PinView Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Debug Console Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Quick and Effective tool solution - QE
+ *Version
+  V9.09.00.01 [18 Oct 2022]
+ *Assembly Version
+  1.15.10.16
+ *DLL File Name
+  InCarTools.dll
+Pin Configurator Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Program Analyzer Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+IronPython Console Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Editor plug-in DLL
+ *Version
+  V1.19.00.01 [24 Oct 2022]
+ *Assembly Version
+  1.1.0.0
+ *DLL File Name
+  SEditor.dll
+Smart Configurator for RH850 Communication Plug-in
+ *Version
+  V1.02.07.02 [12 May 2023]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  SmcCodePartRH850.dll
+Stack Usage Tracer(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Update Manager Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+
+Debug Tool Common Interface
+ *Version
+  V8.10.00.02 [12 May 2023]
+ *Assembly Version
+  3.12.10.1
+ *DLL File Name
+  CommonDebuggerInterface.dll
+Device Information Common Interface
+ *Version
+  V9.10.00.01 [14 Apr 2023]
+ *Assembly Version
+  3.0.0.0
+ *DLL File Name
+  DeviceInformation.dll
+
+--- Main Project Information ---
+D:\MAHESH KUMAR P\MAHESH\GALAXI\MOTOR_CONTROL_PROJECTS\1_RENESAS_Base\03_WIP\1_CODE\LTVS_MOTOR_TEST\4_LTVS_R2_HUB_MOT_GETS_13052025_V1_7_COM_LTVS_MOT_2804\LTVS_R2_5KW_IVCU_HUB_MOTOR_GETS_DYN_13052025_V1_7_COM_LTVS_MOT_2804.mtpj
+Microcontroller Information
+ *R7F701684
+  *File Name: Version
+   RH850_Productlist.xml: V8.100000
+   R7F701684_common.xml: V1.40.00.XX.XX
+   DR7F701684.DVF: V1.40
+   -: -
+   -: -
+  
+
+Build Tool Information
+ *CC-RH
+   * Version of plug-in(*.dll)
+     V8.10.00.02 [08 May 2023]
+   * The Version of the Compiler Package
+     V2.05.00
+  
+
+Debug Tool Information
+ *RH850 E2
+  Debugger Library V8.10.00.02 [12 May 2023]
+  RH850G3 Executor V4.09.00.01
+  E1/E20/E2 RH850  F/W V.1.06.00.000
+  Control Board V.1.03.00.011 Rev.0005 FPGA Version V03.00
+  
+
+Other Tool Information
+ *None
+
+ *Smart Configurator
+

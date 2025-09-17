@@ -1,0 +1,3439 @@
+Renesas Optimizing Linker (W3.05.00 )             13-Jun-2024 15:45:21
+
+*** Options ***
+
+-MAKEUD=DefaultBuild\LUCAS_TVS_5KW_IVCU_HUB_MOTOR_03062024_V0.lk.ud
+-subcommand=DefaultBuild\LUCAS_TVS_5KW_IVCU_HUB_MOTOR_03062024_V0.clnk
+-input=DefaultBuild\boot.obj
+-input=DefaultBuild\cstart.obj
+-input=DefaultBuild\main.obj
+-input=DefaultBuild\Config_CGC.obj
+-input=DefaultBuild\Systeminit.obj
+-input=DefaultBuild\intvector.obj
+-input=DefaultBuild\DummyInt.obj
+-input=DefaultBuild\Config_ADC.obj
+-input=DefaultBuild\Config_PWM.obj
+-input=DefaultBuild\Config_PORT.obj
+-input=DefaultBuild\Config_OSTM.obj
+-input=DefaultBuild\Config_TAUB0_0.obj
+-input=DefaultBuild\Config_TAUB0_1.obj
+-input=DefaultBuild\Config_CANFD.obj
+-input=DefaultBuild\CAN_FD.obj
+-input=DefaultBuild\Config_WDT.obj
+-input=DefaultBuild\ADC_Result.obj
+-input=DefaultBuild\Trapezoidal_Mode.obj
+-input=DefaultBuild\Fault_Analysis.obj
+-input=DefaultBuild\Register_Interface.obj
+-input=DefaultBuild\Motor_Control.obj
+-input=DefaultBuild\Sinusoidal_Mode.obj
+-debug
+-nocompress
+-NOOPtimize
+-output=DefaultBuild\LUCAS_TVS_5KW_IVCU_HUB_MOTOR_03062024_V0.abs
+-library=v850e3v5\rhf4n.lib
+-library=v850e3v5\libmalloc.lib
+-list=DefaultBuild\LUCAS_TVS_5KW_IVCU_HUB_MOTOR_03062024_V0.map
+-show=all
+-start=RESET/0,EIINTTBL.const/00000200,.const,.INIT_DSEC.const,.INIT_BSEC.const,.text,.data/00008000,.data.R,.bss,.stack.bss/FEDE8000
+-rom=.data=.data.R
+-nologo
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+RESET
+                                  00000000  000001f7       1f8   200
+EIINTTBL.const
+                                  00000200  00000797       598   4
+.const
+                                  00008000  000083ff       400   4
+.INIT_DSEC.const
+                                  00008400  0000840b         c   4
+.INIT_BSEC.const
+                                  0000840c  00008413         8   4
+.text
+                                  00008414  0000b3af      2f9c   2
+.data
+                                  0000b3b0  0000b5d3       224   4
+.data.R
+                                  fede8000  fede8223       224   4
+.bss
+                                  fede8224  fede8237        14   4
+.stack.bss
+                                  fede8238  fede8437       200   4
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  00000438 Byte(s)
+ROMDATA SECTION:  00000bd0 Byte(s)
+PROGRAM SECTION:  00003194 Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+    STRUCT                                      SIZE
+      MEMBER                        ADDR        SIZE    INFO
+
+SECTION=RESET
+FILE=DefaultBuild\boot.obj
+                                  00000000  000001f7       1f8
+
+SECTION=EIINTTBL.const
+FILE=DefaultBuild\intvector.obj
+                                  00000200  00000797       598
+  _INT_Vectors
+                                  00000200       598   data ,g         0
+
+SECTION=.const
+FILE=DefaultBuild\Sinusoidal_Mode.obj
+                                  00008000  000083ff       400
+  _Table
+                                  00008000       400   data ,g         1
+
+SECTION=.INIT_DSEC.const
+FILE=DefaultBuild\cstart.obj
+                                  00008400  0000840b         c
+
+SECTION=.INIT_BSEC.const
+FILE=DefaultBuild\cstart.obj
+                                  0000840c  00008413         8
+
+SECTION=.text
+FILE=DefaultBuild\boot.obj
+                                  00008414  000084ad        9a
+  _Dummy
+                                  00008414         0   none ,l         d
+  _Dummy_EI
+                                  00008416         0   none ,l        14
+  __start
+                                  00008418         0   none ,l         1
+  _hdwinit
+                                  00008472         0   none ,l         1
+  _zeroclr4
+                                  00008488         0   none ,l         2
+  _set_table_reference_method
+                                  00008496         0   none ,l         1
+FILE=DefaultBuild\cstart.obj
+                                  000084ae  0000851f        72
+  __cstart
+                                  000084ae         0   none ,g         1
+  _exit
+                                  0000851e         0   none ,l         2
+FILE=DefaultBuild\main.obj
+                                  00008520  0000855b        3c
+  _main
+                                  00008520        28   func ,g         1
+  _r_main_userinit
+                                  00008548        14   func ,g         1
+FILE=DefaultBuild\Config_CGC.obj
+                                  0000855c  000089b5       45a
+  _R_CGC_Create
+                                  0000855c       45a   func ,g         1
+FILE=DefaultBuild\Systeminit.obj
+                                  000089b6  000089dd        28
+  _R_Systeminit
+                                  000089b6        28   func ,g         1
+FILE=DefaultBuild\DummyInt.obj
+                                  000089de  00008cbd       2e0
+  _eiint0
+                                  000089de         2   func ,g         1
+  _eiint1
+                                  000089e0         2   func ,g         1
+  _eiint2
+                                  000089e2         2   func ,g         1
+  _eiint3
+                                  000089e4         2   func ,g         1
+  _eiint4
+                                  000089e6         2   func ,g         1
+  _eiint5
+                                  000089e8         2   func ,g         1
+  _eiint6
+                                  000089ea         2   func ,g         1
+  _eiint7
+                                  000089ec         2   func ,g         1
+  _eiint8
+                                  000089ee         2   func ,g         1
+  _eiint9
+                                  000089f0         2   func ,g         1
+  _eiint10
+                                  000089f2         2   func ,g         1
+  _eiint11
+                                  000089f4         2   func ,g         1
+  _eiint12
+                                  000089f6         2   func ,g         1
+  _eiint13
+                                  000089f8         2   func ,g         1
+  _eiint14
+                                  000089fa         2   func ,g         1
+  _eiint15
+                                  000089fc         2   func ,g         1
+  _eiint16
+                                  000089fe         2   func ,g         1
+  _eiint17
+                                  00008a00         2   func ,g         1
+  _eiint18
+                                  00008a02         2   func ,g         1
+  _eiint19
+                                  00008a04         2   func ,g         1
+  _eiint20
+                                  00008a06         2   func ,g         1
+  _eiint21
+                                  00008a08         2   func ,g         1
+  _eiint22
+                                  00008a0a         2   func ,g         1
+  _eiint23
+                                  00008a0c         2   func ,g         0
+  _eiint24
+                                  00008a0e         2   func ,g         1
+  _eiint25
+                                  00008a10         2   func ,g         1
+  _eiint26
+                                  00008a12         2   func ,g         0
+  _eiint27
+                                  00008a14         2   func ,g         1
+  _eiint28
+                                  00008a16         2   func ,g         1
+  _eiint29
+                                  00008a18         2   func ,g         1
+  _eiint30
+                                  00008a1a         2   func ,g         1
+  _eiint31
+                                  00008a1c         2   func ,g         1
+  _eiint32
+                                  00008a1e         2   func ,g         1
+  _eiint33
+                                  00008a20         2   func ,g         1
+  _eiint34
+                                  00008a22         2   func ,g         1
+  _eiint35
+                                  00008a24         2   func ,g         1
+  _eiint36
+                                  00008a26         2   func ,g         1
+  _eiint37
+                                  00008a28         2   func ,g         1
+  _eiint38
+                                  00008a2a         2   func ,g         1
+  _eiint39
+                                  00008a2c         2   func ,g         1
+  _eiint40
+                                  00008a2e         2   func ,g         0
+  _eiint41
+                                  00008a30         2   func ,g         1
+  _eiint42
+                                  00008a32         2   func ,g         1
+  _eiint43
+                                  00008a34         2   func ,g         1
+  _eiint44
+                                  00008a36         2   func ,g         1
+  _eiint45
+                                  00008a38         2   func ,g         1
+  _eiint46
+                                  00008a3a         2   func ,g         1
+  _eiint47
+                                  00008a3c         2   func ,g         1
+  _eiint48
+                                  00008a3e         2   func ,g         1
+  _eiint49
+                                  00008a40         2   func ,g         1
+  _eiint50
+                                  00008a42         2   func ,g         1
+  _eiint51
+                                  00008a44         2   func ,g         1
+  _eiint52
+                                  00008a46         2   func ,g         1
+  _eiint53
+                                  00008a48         2   func ,g         1
+  _eiint54
+                                  00008a4a         2   func ,g         1
+  _eiint55
+                                  00008a4c         2   func ,g         1
+  _eiint56
+                                  00008a4e         2   func ,g         1
+  _eiint57
+                                  00008a50         2   func ,g         1
+  _eiint58
+                                  00008a52         2   func ,g         1
+  _eiint59
+                                  00008a54         2   func ,g         1
+  _eiint60
+                                  00008a56         2   func ,g         1
+  _eiint61
+                                  00008a58         2   func ,g         1
+  _eiint62
+                                  00008a5a         2   func ,g         1
+  _eiint63
+                                  00008a5c         2   func ,g         1
+  _eiint64
+                                  00008a5e         2   func ,g         1
+  _eiint65
+                                  00008a60         2   func ,g         1
+  _eiint66
+                                  00008a62         2   func ,g         1
+  _eiint67
+                                  00008a64         2   func ,g         1
+  _eiint68
+                                  00008a66         2   func ,g         1
+  _eiint69
+                                  00008a68         2   func ,g         1
+  _eiint70
+                                  00008a6a         2   func ,g         1
+  _eiint71
+                                  00008a6c         2   func ,g         1
+  _eiint72
+                                  00008a6e         2   func ,g         1
+  _eiint73
+                                  00008a70         2   func ,g         1
+  _eiint74
+                                  00008a72         2   func ,g         1
+  _eiint75
+                                  00008a74         2   func ,g         1
+  _eiint76
+                                  00008a76         2   func ,g         1
+  _eiint77
+                                  00008a78         2   func ,g         1
+  _eiint78
+                                  00008a7a         2   func ,g         1
+  _eiint79
+                                  00008a7c         2   func ,g         1
+  _eiint80
+                                  00008a7e         2   func ,g         1
+  _eiint81
+                                  00008a80         2   func ,g         1
+  _eiint82
+                                  00008a82         2   func ,g         1
+  _eiint83
+                                  00008a84         2   func ,g         1
+  _eiint84
+                                  00008a86         2   func ,g         0
+  _eiint85
+                                  00008a88         2   func ,g         1
+  _eiint86
+                                  00008a8a         2   func ,g         1
+  _eiint87
+                                  00008a8c         2   func ,g         1
+  _eiint88
+                                  00008a8e         2   func ,g         1
+  _eiint89
+                                  00008a90         2   func ,g         1
+  _eiint90
+                                  00008a92         2   func ,g         1
+  _eiint91
+                                  00008a94         2   func ,g         1
+  _eiint92
+                                  00008a96         2   func ,g         1
+  _eiint93
+                                  00008a98         2   func ,g         1
+  _eiint94
+                                  00008a9a         2   func ,g         1
+  _eiint95
+                                  00008a9c         2   func ,g         1
+  _eiint96
+                                  00008a9e         2   func ,g         1
+  _eiint97
+                                  00008aa0         2   func ,g         1
+  _eiint98
+                                  00008aa2         2   func ,g         1
+  _eiint99
+                                  00008aa4         2   func ,g         1
+  _eiint100
+                                  00008aa6         2   func ,g         1
+  _eiint101
+                                  00008aa8         2   func ,g         1
+  _eiint102
+                                  00008aaa         2   func ,g         1
+  _eiint103
+                                  00008aac         2   func ,g         1
+  _eiint104
+                                  00008aae         2   func ,g         1
+  _eiint105
+                                  00008ab0         2   func ,g         1
+  _eiint106
+                                  00008ab2         2   func ,g         1
+  _eiint107
+                                  00008ab4         2   func ,g         1
+  _eiint108
+                                  00008ab6         2   func ,g         1
+  _eiint109
+                                  00008ab8         2   func ,g         1
+  _eiint110
+                                  00008aba         2   func ,g         1
+  _eiint111
+                                  00008abc         2   func ,g         1
+  _eiint112
+                                  00008abe         2   func ,g         1
+  _eiint113
+                                  00008ac0         2   func ,g         1
+  _eiint114
+                                  00008ac2         2   func ,g         1
+  _eiint115
+                                  00008ac4         2   func ,g         1
+  _eiint116
+                                  00008ac6         2   func ,g         1
+  _eiint117
+                                  00008ac8         2   func ,g         1
+  _eiint118
+                                  00008aca         2   func ,g         1
+  _eiint119
+                                  00008acc         2   func ,g         1
+  _eiint120
+                                  00008ace         2   func ,g         1
+  _eiint121
+                                  00008ad0         2   func ,g         1
+  _eiint122
+                                  00008ad2         2   func ,g         1
+  _eiint123
+                                  00008ad4         2   func ,g         1
+  _eiint124
+                                  00008ad6         2   func ,g         1
+  _eiint125
+                                  00008ad8         2   func ,g         1
+  _eiint126
+                                  00008ada         2   func ,g         1
+  _eiint127
+                                  00008adc         2   func ,g         1
+  _eiint128
+                                  00008ade         2   func ,g         1
+  _eiint129
+                                  00008ae0         2   func ,g         1
+  _eiint130
+                                  00008ae2         2   func ,g         1
+  _eiint131
+                                  00008ae4         2   func ,g         1
+  _eiint132
+                                  00008ae6         2   func ,g         1
+  _eiint133
+                                  00008ae8         2   func ,g         1
+  _eiint134
+                                  00008aea         2   func ,g         1
+  _eiint135
+                                  00008aec         2   func ,g         1
+  _eiint136
+                                  00008aee         2   func ,g         1
+  _eiint137
+                                  00008af0         2   func ,g         1
+  _eiint138
+                                  00008af2         2   func ,g         1
+  _eiint139
+                                  00008af4         2   func ,g         1
+  _eiint140
+                                  00008af6         2   func ,g         1
+  _eiint141
+                                  00008af8         2   func ,g         1
+  _eiint142
+                                  00008afa        16   func ,g         0
+  _eiint143
+                                  00008b10         2   func ,g         0
+  _eiint144
+                                  00008b12         2   func ,g         1
+  _eiint145
+                                  00008b14         2   func ,g         1
+  _eiint146
+                                  00008b16         2   func ,g         1
+  _eiint147
+                                  00008b18         2   func ,g         1
+  _eiint148
+                                  00008b1a         2   func ,g         1
+  _eiint149
+                                  00008b1c         2   func ,g         1
+  _eiint150
+                                  00008b1e         2   func ,g         1
+  _eiint151
+                                  00008b20         2   func ,g         1
+  _eiint152
+                                  00008b22         2   func ,g         1
+  _eiint153
+                                  00008b24         2   func ,g         1
+  _eiint154
+                                  00008b26         2   func ,g         1
+  _eiint155
+                                  00008b28         2   func ,g         1
+  _eiint156
+                                  00008b2a         2   func ,g         1
+  _eiint157
+                                  00008b2c         2   func ,g         1
+  _eiint158
+                                  00008b2e         2   func ,g         1
+  _eiint159
+                                  00008b30         2   func ,g         1
+  _eiint160
+                                  00008b32         2   func ,g         1
+  _eiint161
+                                  00008b34         2   func ,g         1
+  _eiint162
+                                  00008b36         2   func ,g         1
+  _eiint163
+                                  00008b38         2   func ,g         1
+  _eiint164
+                                  00008b3a         2   func ,g         1
+  _eiint165
+                                  00008b3c         2   func ,g         1
+  _eiint166
+                                  00008b3e         2   func ,g         1
+  _eiint167
+                                  00008b40         2   func ,g         1
+  _eiint168
+                                  00008b42         2   func ,g         1
+  _eiint169
+                                  00008b44         2   func ,g         1
+  _eiint170
+                                  00008b46         2   func ,g         1
+  _eiint171
+                                  00008b48         2   func ,g         1
+  _eiint172
+                                  00008b4a         2   func ,g         1
+  _eiint173
+                                  00008b4c         2   func ,g         1
+  _eiint174
+                                  00008b4e         2   func ,g         1
+  _eiint175
+                                  00008b50         2   func ,g         1
+  _eiint176
+                                  00008b52         2   func ,g         1
+  _eiint177
+                                  00008b54         2   func ,g         1
+  _eiint178
+                                  00008b56         2   func ,g         1
+  _eiint179
+                                  00008b58         2   func ,g         1
+  _eiint180
+                                  00008b5a         2   func ,g         1
+  _eiint181
+                                  00008b5c         2   func ,g         1
+  _eiint182
+                                  00008b5e         2   func ,g         1
+  _eiint183
+                                  00008b60         2   func ,g         1
+  _eiint184
+                                  00008b62         2   func ,g         1
+  _eiint185
+                                  00008b64         2   func ,g         1
+  _eiint186
+                                  00008b66         2   func ,g         1
+  _eiint187
+                                  00008b68         2   func ,g         1
+  _eiint188
+                                  00008b6a         2   func ,g         1
+  _eiint189
+                                  00008b6c         2   func ,g         1
+  _eiint190
+                                  00008b6e         2   func ,g         1
+  _eiint191
+                                  00008b70         2   func ,g         1
+  _eiint192
+                                  00008b72         2   func ,g         1
+  _eiint193
+                                  00008b74         2   func ,g         1
+  _eiint194
+                                  00008b76         2   func ,g         1
+  _eiint195
+                                  00008b78         2   func ,g         1
+  _eiint196
+                                  00008b7a         2   func ,g         1
+  _eiint197
+                                  00008b7c         2   func ,g         1
+  _eiint198
+                                  00008b7e         2   func ,g         1
+  _eiint199
+                                  00008b80         2   func ,g         1
+  _eiint200
+                                  00008b82         2   func ,g         1
+  _eiint201
+                                  00008b84         2   func ,g         1
+  _eiint202
+                                  00008b86         2   func ,g         1
+  _eiint203
+                                  00008b88         2   func ,g         1
+  _eiint204
+                                  00008b8a         2   func ,g         1
+  _eiint205
+                                  00008b8c         2   func ,g         1
+  _eiint206
+                                  00008b8e         2   func ,g         1
+  _eiint207
+                                  00008b90         2   func ,g         1
+  _eiint208
+                                  00008b92         2   func ,g         1
+  _eiint209
+                                  00008b94         2   func ,g         1
+  _eiint210
+                                  00008b96         2   func ,g         1
+  _eiint211
+                                  00008b98         2   func ,g         1
+  _eiint212
+                                  00008b9a         2   func ,g         1
+  _eiint213
+                                  00008b9c         2   func ,g         1
+  _eiint214
+                                  00008b9e         2   func ,g         1
+  _eiint215
+                                  00008ba0         2   func ,g         1
+  _eiint216
+                                  00008ba2         2   func ,g         1
+  _eiint217
+                                  00008ba4         2   func ,g         1
+  _eiint218
+                                  00008ba6         2   func ,g         1
+  _eiint219
+                                  00008ba8         2   func ,g         1
+  _eiint220
+                                  00008baa         2   func ,g         1
+  _eiint221
+                                  00008bac         2   func ,g         1
+  _eiint222
+                                  00008bae         2   func ,g         1
+  _eiint223
+                                  00008bb0         2   func ,g         1
+  _eiint224
+                                  00008bb2         2   func ,g         1
+  _eiint225
+                                  00008bb4         2   func ,g         1
+  _eiint226
+                                  00008bb6         2   func ,g         1
+  _eiint227
+                                  00008bb8         2   func ,g         1
+  _eiint228
+                                  00008bba         2   func ,g         1
+  _eiint229
+                                  00008bbc         2   func ,g         1
+  _eiint230
+                                  00008bbe         2   func ,g         1
+  _eiint231
+                                  00008bc0         2   func ,g         1
+  _eiint232
+                                  00008bc2         2   func ,g         1
+  _eiint233
+                                  00008bc4         2   func ,g         1
+  _eiint234
+                                  00008bc6         2   func ,g         1
+  _eiint235
+                                  00008bc8         2   func ,g         1
+  _eiint236
+                                  00008bca         2   func ,g         1
+  _eiint237
+                                  00008bcc         2   func ,g         1
+  _eiint238
+                                  00008bce         2   func ,g         1
+  _eiint239
+                                  00008bd0         2   func ,g         1
+  _eiint240
+                                  00008bd2         2   func ,g         1
+  _eiint241
+                                  00008bd4         2   func ,g         1
+  _eiint242
+                                  00008bd6         2   func ,g         1
+  _eiint243
+                                  00008bd8         2   func ,g         1
+  _eiint244
+                                  00008bda         2   func ,g         1
+  _eiint245
+                                  00008bdc         2   func ,g         1
+  _eiint246
+                                  00008bde         2   func ,g         1
+  _eiint247
+                                  00008be0         2   func ,g         1
+  _eiint248
+                                  00008be2         2   func ,g         1
+  _eiint249
+                                  00008be4         2   func ,g         1
+  _eiint250
+                                  00008be6         2   func ,g         1
+  _eiint251
+                                  00008be8         2   func ,g         1
+  _eiint252
+                                  00008bea         2   func ,g         1
+  _eiint253
+                                  00008bec         2   func ,g         1
+  _eiint254
+                                  00008bee         2   func ,g         1
+  _eiint255
+                                  00008bf0         2   func ,g         1
+  _eiint256
+                                  00008bf2         2   func ,g         1
+  _eiint257
+                                  00008bf4         2   func ,g         1
+  _eiint258
+                                  00008bf6         2   func ,g         1
+  _eiint259
+                                  00008bf8         2   func ,g         1
+  _eiint260
+                                  00008bfa         2   func ,g         1
+  _eiint261
+                                  00008bfc         2   func ,g         1
+  _eiint262
+                                  00008bfe         2   func ,g         1
+  _eiint263
+                                  00008c00         2   func ,g         1
+  _eiint264
+                                  00008c02         2   func ,g         1
+  _eiint265
+                                  00008c04         2   func ,g         1
+  _eiint266
+                                  00008c06         2   func ,g         1
+  _eiint267
+                                  00008c08         2   func ,g         1
+  _eiint268
+                                  00008c0a         2   func ,g         1
+  _eiint269
+                                  00008c0c         2   func ,g         1
+  _eiint270
+                                  00008c0e         2   func ,g         1
+  _eiint271
+                                  00008c10         2   func ,g         1
+  _eiint272
+                                  00008c12         2   func ,g         1
+  _eiint273
+                                  00008c14         2   func ,g         1
+  _eiint274
+                                  00008c16         2   func ,g         1
+  _eiint275
+                                  00008c18         2   func ,g         1
+  _eiint276
+                                  00008c1a         2   func ,g         1
+  _eiint277
+                                  00008c1c         2   func ,g         1
+  _eiint278
+                                  00008c1e         2   func ,g         1
+  _eiint279
+                                  00008c20         2   func ,g         1
+  _eiint280
+                                  00008c22         2   func ,g         1
+  _eiint281
+                                  00008c24         2   func ,g         1
+  _eiint282
+                                  00008c26         2   func ,g         1
+  _eiint283
+                                  00008c28         2   func ,g         1
+  _eiint284
+                                  00008c2a         2   func ,g         1
+  _eiint285
+                                  00008c2c         2   func ,g         1
+  _eiint286
+                                  00008c2e         2   func ,g         1
+  _eiint287
+                                  00008c30         2   func ,g         1
+  _eiint288
+                                  00008c32         2   func ,g         1
+  _eiint289
+                                  00008c34         2   func ,g         1
+  _eiint290
+                                  00008c36         2   func ,g         1
+  _eiint291
+                                  00008c38         2   func ,g         1
+  _eiint292
+                                  00008c3a         2   func ,g         1
+  _eiint293
+                                  00008c3c         2   func ,g         1
+  _eiint294
+                                  00008c3e         2   func ,g         1
+  _eiint295
+                                  00008c40         2   func ,g         1
+  _eiint296
+                                  00008c42         2   func ,g         1
+  _eiint297
+                                  00008c44         2   func ,g         1
+  _eiint298
+                                  00008c46         2   func ,g         1
+  _eiint299
+                                  00008c48         2   func ,g         1
+  _eiint300
+                                  00008c4a         2   func ,g         1
+  _eiint301
+                                  00008c4c         2   func ,g         1
+  _eiint302
+                                  00008c4e         2   func ,g         1
+  _eiint303
+                                  00008c50         2   func ,g         1
+  _eiint304
+                                  00008c52         2   func ,g         1
+  _eiint305
+                                  00008c54         2   func ,g         1
+  _eiint306
+                                  00008c56         2   func ,g         1
+  _eiint307
+                                  00008c58         2   func ,g         1
+  _eiint308
+                                  00008c5a         2   func ,g         1
+  _eiint309
+                                  00008c5c         2   func ,g         1
+  _eiint310
+                                  00008c5e         2   func ,g         1
+  _eiint311
+                                  00008c60         2   func ,g         1
+  _eiint312
+                                  00008c62         2   func ,g         1
+  _eiint313
+                                  00008c64         2   func ,g         1
+  _eiint314
+                                  00008c66         2   func ,g         1
+  _eiint315
+                                  00008c68         2   func ,g         1
+  _eiint316
+                                  00008c6a         2   func ,g         1
+  _eiint317
+                                  00008c6c         2   func ,g         1
+  _eiint318
+                                  00008c6e         2   func ,g         1
+  _eiint319
+                                  00008c70         2   func ,g         1
+  _eiint320
+                                  00008c72         2   func ,g         1
+  _eiint321
+                                  00008c74         2   func ,g         1
+  _eiint322
+                                  00008c76         2   func ,g         1
+  _eiint323
+                                  00008c78         2   func ,g         1
+  _eiint324
+                                  00008c7a         2   func ,g         1
+  _eiint325
+                                  00008c7c         2   func ,g         1
+  _eiint326
+                                  00008c7e         2   func ,g         1
+  _eiint327
+                                  00008c80         2   func ,g         1
+  _eiint328
+                                  00008c82         2   func ,g         1
+  _eiint329
+                                  00008c84         2   func ,g         1
+  _eiint330
+                                  00008c86         2   func ,g         1
+  _eiint331
+                                  00008c88         2   func ,g         1
+  _eiint332
+                                  00008c8a         2   func ,g         1
+  _eiint333
+                                  00008c8c         2   func ,g         1
+  _eiint334
+                                  00008c8e         2   func ,g         1
+  _eiint335
+                                  00008c90         2   func ,g         1
+  _eiint336
+                                  00008c92         2   func ,g         1
+  _eiint337
+                                  00008c94         2   func ,g         1
+  _eiint338
+                                  00008c96         2   func ,g         1
+  _eiint339
+                                  00008c98         2   func ,g         1
+  _eiint340
+                                  00008c9a         2   func ,g         1
+  _eiint341
+                                  00008c9c         2   func ,g         1
+  _eiint342
+                                  00008c9e         2   func ,g         1
+  _eiint343
+                                  00008ca0         2   func ,g         1
+  _eiint344
+                                  00008ca2         2   func ,g         1
+  _eiint345
+                                  00008ca4         2   func ,g         1
+  _eiint346
+                                  00008ca6         2   func ,g         1
+  _eiint347
+                                  00008ca8         2   func ,g         1
+  _eiint348
+                                  00008caa         2   func ,g         1
+  _eiint349
+                                  00008cac         2   func ,g         1
+  _eiint350
+                                  00008cae         2   func ,g         1
+  _eiint351
+                                  00008cb0         2   func ,g         1
+  _eiint352
+                                  00008cb2         2   func ,g         1
+  _eiint353
+                                  00008cb4         2   func ,g         1
+  _eiint354
+                                  00008cb6         2   func ,g         1
+  _eiint355
+                                  00008cb8         2   func ,g         1
+  _eiint356
+                                  00008cba         2   func ,g         1
+  _eiint357
+                                  00008cbc         2   func ,g         1
+FILE=DefaultBuild\Config_ADC.obj
+                                  00008cbe  00008ee9       22c
+  _R_Config_ADCA0_Create
+                                  00008cbe       164   func ,g         1
+  _R_Config_ADCA0_Halt
+                                  00008e22        18   func ,g         0
+  _R_Config_ADCA0_SelfDiagnostic_VoltageCircuitOn
+                                  00008e3a        12   func ,g         0
+  _R_Config_ADCA0_SelfDiagnostic_VoltageCircuitOff
+                                  00008e4c        14   func ,g         0
+  _R_Config_ADCA0_ScanGroup1_OperationOn
+                                  00008e60         a   func ,g         0
+  _R_Config_ADCA0_ScanGroup1_OperationOff
+                                  00008e6a         a   func ,g         0
+  _R_Config_ADCA0_ScanGroup1_GetResult
+                                  00008e74        76   func ,g         0
+FILE=DefaultBuild\Config_PWM.obj
+                                  00008eea  000092e5       3fc
+  _Update_PWM_Duty
+                                  00008eea        1a   func ,g         3
+  _PWM_Calculate_Timer_Count
+                                  00008f04        2e   func ,g         1
+  _PWM_Init_TAUD0
+                                  00008f32       14a   func ,g         1
+  _PWM_INLI
+                                  0000907c        24   func ,g         1
+  _PWM_PIC0_Init
+                                  000090a0        ca   func ,g         1
+  _PWM_Disable_INTTAUD0
+                                  0000916a        f6   func ,g         1
+  _PWM_START
+                                  00009260        18   func ,g         1
+  _PWM_STOP
+                                  00009278        6e   func ,g         1
+FILE=DefaultBuild\Config_PORT.obj
+                                  000092e6  000099a7       6c2
+  _PWM_R_Pins_Create
+                                  000092e6       2d6   func ,g         1
+  _R_Config_PORT_Create
+                                  000095bc       356   func ,g         1
+  _Config_CAN_PORT
+                                  00009912        96   func ,g         1
+FILE=DefaultBuild\Config_OSTM.obj
+                                  000099a8  00009a8b        e4
+  _R_Config_OSTM0_Create
+                                  000099a8        3e   func ,g         1
+  _R_Config_OSTM0_Start
+                                  000099e6        12   func ,g         1
+  _R_Config_OSTM0_Stop
+                                  000099f8        22   func ,g         0
+  _R_Config_OSTM0_Set_CompareValue
+                                  00009a1a         8   func ,g         0
+  _r_Config_OSTM0_interrupt
+                                  00009a22        6a   func ,g         1
+FILE=DefaultBuild\Config_TAUB0_0.obj
+                                  00009a8c  00009bc1       136
+  _R_Config_TAUB0_0_Create
+                                  00009a8c        9a   func ,g         1
+  _R_Config_TAUB0_0_Start
+                                  00009b26        1a   func ,g         1
+  _R_Config_TAUB0_0_Stop
+                                  00009b40        28   func ,g         0
+  _r_Config_TAUB0_0_interrupt
+                                  00009b68        5a   func ,g         1
+FILE=DefaultBuild\Config_TAUB0_1.obj
+                                  00009bc2  00009d05       144
+  _R_Config_TAUB0_1_Create
+                                  00009bc2        a8   func ,g         1
+  _R_Config_TAUB0_1_Start
+                                  00009c6a        1a   func ,g         1
+  _R_Config_TAUB0_1_Stop
+                                  00009c84        28   func ,g         0
+  _r_Config_TAUB0_1_interrupt
+                                  00009cac        5a   func ,g         1
+FILE=DefaultBuild\Config_CANFD.obj
+                                  00009d06  00009e37       132
+  _R_RSCAN0FD_Init
+                                  00009d06       122   func ,g         1
+  _R_CANFD_Init
+                                  00009e28        10   func ,g         1
+FILE=DefaultBuild\CAN_FD.obj
+                                  00009e38  0000a0eb       2b4
+  _can0_tx
+                                  00009e38        90   func ,g         0
+  _can0_rx
+                                  00009ec8        70   func ,g         1
+  _CAN_Rx_FIFO_ISR
+                                  00009f38       116   func ,g         1
+  _CAN0_Tx_ISR
+                                  0000a04e        9e   func ,g         1
+FILE=DefaultBuild\Config_WDT.obj
+                                  0000a0ec  0000a179        8e
+  _R_Config_WDT0_Create
+                                  0000a0ec        46   func ,g         0
+  _R_Config_WDT0_Restart
+                                  0000a132         c   func ,g         1
+  _r_Config_WDT0_interrupt
+                                  0000a13e        3c   func ,g         1
+FILE=DefaultBuild\ADC_Result.obj
+                                  0000a17a  0000a5c5       44c
+  _Current_Read
+                                  0000a17a       44c   func ,g         0
+FILE=DefaultBuild\Trapezoidal_Mode.obj
+                                  0000a5c6  0000aabb       4f6
+  _Hall_Read
+                                  0000a5c6        3c   func ,g         2
+  _Sector_Estimation
+                                  0000a602       134   func ,g         1
+  _Deg_Estimation
+                                  0000a736        ae   func ,g         1
+  _Speed_Estimation
+                                  0000a7e4       18c   func ,g         1
+  _Ele_Deg_Estimation
+                                  0000a970        8a   func ,g         1
+  _Trapezoidal_Patern
+                                  0000a9fa        a6   func ,g         1
+  _Trapezoidal_MODE
+                                  0000aaa0        1c   func ,g         1
+FILE=DefaultBuild\Fault_Analysis.obj
+                                  0000aabc  0000afbb       500
+  _Sensor_Health_Check
+                                  0000aabc       234   func ,g         0
+  _Sensor_Run_Time_Moni
+                                  0000acf0        c4   func ,g         1
+  _Hardware_Fault_Moni
+                                  0000adb4        a2   func ,g         0
+  _Software_Fault_Monitor
+                                  0000ae56       166   func ,g         0
+FILE=DefaultBuild\Motor_Control.obj
+                                  0000afbc  0000b0bb       100
+  _Motor_Run_Mode_Select
+                                  0000afbc       100   func ,g         0
+FILE=DefaultBuild\Sinusoidal_Mode.obj
+                                  0000b0bc  0000b2ff       244
+  _Sinusoidal_MODE
+                                  0000b0bc       1ee   func ,g         1
+  _Angle_Conversion
+                                  0000b2aa        56   func ,g         1
+FILE=initsct_rh
+                                  0000b300  0000b3af        b0
+  __INITSCT_RH
+                                  0000b300         0   none ,g         1
+
+SECTION=.data
+FILE=DefaultBuild\main.obj
+                                  0000b3b0  0000b3b7         8
+FILE=DefaultBuild\Config_PWM.obj
+                                  0000b3b8  0000b3bb         4
+FILE=DefaultBuild\Config_OSTM.obj
+                                  0000b3bc  0000b3bf         4
+FILE=DefaultBuild\Config_TAUB0_0.obj
+                                  0000b3c0  0000b3c3         4
+FILE=DefaultBuild\Config_TAUB0_1.obj
+                                  0000b3c4  0000b3c7         4
+FILE=DefaultBuild\Config_CANFD.obj
+                                  0000b3c8  0000b3cb         4
+FILE=DefaultBuild\CAN_FD.obj
+                                  0000b3cc  0000b3e3        18
+FILE=DefaultBuild\ADC_Result.obj
+                                  0000b3e4  0000b53b       158
+FILE=DefaultBuild\Trapezoidal_Mode.obj
+                                  0000b53c  0000b56a        2f
+FILE=DefaultBuild\Fault_Analysis.obj
+                                  0000b56c  0000b58a        1f
+FILE=DefaultBuild\Motor_Control.obj
+                                  0000b58c  0000b597         c
+FILE=DefaultBuild\Sinusoidal_Mode.obj
+                                  0000b598  0000b5d3        3c
+
+SECTION=.data.R
+FILE=DefaultBuild\main.obj
+                                  fede8000  fede8007         8
+  _main_cnt
+                                  fede8000         4   data ,g         3
+  _read_val
+                                  fede8004         4   data ,g         0
+FILE=DefaultBuild\Config_PWM.obj
+                                  fede8008  fede800b         4
+  _Timer_Count
+                                  fede8008         4   data ,g         4
+FILE=DefaultBuild\Config_OSTM.obj
+                                  fede800c  fede800f         4
+  _ostm_CNT
+                                  fede800c         4   data ,g         3
+FILE=DefaultBuild\Config_TAUB0_0.obj
+                                  fede8010  fede8013         4
+  _taub0_0_CNT
+                                  fede8010         4   data ,g         3
+FILE=DefaultBuild\Config_TAUB0_1.obj
+                                  fede8014  fede8017         4
+  _tab0_1_CNT
+                                  fede8014         4   data ,g         3
+FILE=DefaultBuild\Config_CANFD.obj
+                                  fede8018  fede801b         4
+  _i
+                                  fede8018         4   data ,g         8
+FILE=DefaultBuild\CAN_FD.obj
+                                  fede801c  fede8033        18
+  _rx_flag
+                                  fede801c         1   data ,g         2
+  _error_flag
+                                  fede801d         1   data ,g         0
+  _RX_Fifo_empty
+                                  fede801e         1   data ,g         2
+  _RX_fifo_full
+                                  fede8020         4   data ,g         2
+  _RX_Fifo_msg_lost
+                                  fede8024         4   data ,g         0
+  _rx_cnt
+                                  fede8028         1   data ,g         3
+  _ISR_Cnt
+                                  fede802c         4   data ,g         3
+  _CAN_Tx_Cnt
+                                  fede8030         4   data ,g         3
+FILE=DefaultBuild\ADC_Result.obj
+                                  fede8034  fede818b       158
+  _mon_5V_Cnt
+                                  fede8034         2   data ,g         4
+  _mon_5V_uC_V
+                                  fede8038         4   data ,g         2
+  _mon_5V
+                                  fede803c         4   data ,g         2
+  _mon_A_5V_Cnt
+                                  fede8040         2   data ,g         4
+  _mon_A_5V_uC_V
+                                  fede8044         4   data ,g         2
+  _mon_A_5V
+                                  fede8048         4   data ,g         2
+  _dc_Bus_V_Cnt
+                                  fede804c         2   data ,g         4
+  _dc_Bus_V
+                                  fede8050         4   data ,g         2
+  _dc_Bus_V_uC_V
+                                  fede8054         4   data ,g         2
+  _dc_Bus_I_Cnt
+                                  fede8058         2   data ,g         4
+  _dc_Bus_I
+                                  fede805c         4   data ,g         2
+  _dc_Bus_I_uC_V
+                                  fede8060         4   data ,g         2
+  _dc_Bus_I_CAL
+                                  fede8064         4   data ,g         2
+  _ac_R_Ph_V_Cnt
+                                  fede8068         2   data ,g         4
+  _ac_Y_Ph_V_Cnt
+                                  fede806a         2   data ,g         4
+  _ac_B_Ph_V_Cnt
+                                  fede806c         2   data ,g         4
+  _ac_R_Ph_V_uC_V
+                                  fede8070         4   data ,g         2
+  _ac_Y_Ph_V_uC_V
+                                  fede8074         4   data ,g         2
+  _ac_B_Ph_V_uC_V
+                                  fede8078         4   data ,g         2
+  _ac_R_Ph_V
+                                  fede807c         4   data ,g         2
+  _ac_Y_Ph_V
+                                  fede8080         4   data ,g         2
+  _ac_B_Ph_V
+                                  fede8084         4   data ,g         2
+  _ac_R_Ph_V_RMS
+                                  fede8088         4   data ,g         0
+  _ac_Y_Ph_V_RMS
+                                  fede808c         4   data ,g         0
+  _ac_B_Ph_V_RMS
+                                  fede8090         4   data ,g         0
+  _ac_R_Ph_I_Cnt
+                                  fede8094         2   data ,g         4
+  _ac_Y_Ph_I_Cnt
+                                  fede8096         2   data ,g         4
+  _ac_B_Ph_I_Cnt
+                                  fede8098         2   data ,g         4
+  _ac_R_Ph_I_uC_V
+                                  fede809c         4   data ,g         2
+  _ac_Y_Ph_I_uC_V
+                                  fede80a0         4   data ,g         2
+  _ac_B_Ph_I_uC_V
+                                  fede80a4         4   data ,g         2
+  _ac_R_Ph_I_CAL
+                                  fede80a8         4   data ,g         2
+  _ac_Y_Ph_I_CAL
+                                  fede80ac         4   data ,g         2
+  _ac_B_Ph_I_CAL
+                                  fede80b0         4   data ,g         2
+  _ac_R_Ph_I
+                                  fede80b4         4   data ,g         2
+  _ac_Y_Ph_I
+                                  fede80b8         4   data ,g         2
+  _ac_B_Ph_I
+                                  fede80bc         4   data ,g         2
+  _ac_R_Ph_I_RMS
+                                  fede80c0         4   data ,g         0
+  _ac_Y_Ph_I_RMS
+                                  fede80c4         4   data ,g         0
+  _ac_B_Ph_I_RMS
+                                  fede80c8         4   data ,g         0
+  _inv_Input_Power
+                                  fede80cc         4   data ,g         0
+  _inv_Output_Power
+                                  fede80d0         4   data ,g         0
+  _inv_Efficiency
+                                  fede80d4         4   data ,g         0
+  _inv_R_Ph_Temp_Cnt
+                                  fede80d8         2   data ,g         6
+  _inv_Y_Ph_Temp_Cnt
+                                  fede80da         2   data ,g         6
+  _inv_B_Ph_Temp_Cnt
+                                  fede80dc         2   data ,g         6
+  _int_R_Ph_Temp
+                                  fede80e0         4   data ,g         0
+  _int_Y_Ph_Temp
+                                  fede80e4         4   data ,g         0
+  _int_B_Ph_Temp
+                                  fede80e8         4   data ,g         0
+  _motor_Temp_Cnt
+                                  fede80ec         2   data ,g         6
+  _motor_Temp
+                                  fede80f0         4   data ,g         0
+  _motor_Temp_uC_V
+                                  fede80f4         4   data ,g         0
+  _tps1_Cnt
+                                  fede80f8         2   data ,g         4
+  _tps1_uC_V
+                                  fede80fc         4   data ,g         2
+  _tps1_V
+                                  fede8100         4   data ,g         2
+  _tps2_Cnt
+                                  fede8104         2   data ,g         4
+  _tps2_uC_V
+                                  fede8108         4   data ,g         2
+  _tps2_V
+                                  fede810c         4   data ,g         2
+  _df_Cof_AC_I
+                                  fede8110         4   data ,g         4
+  _perivious_AC_R_Ph_I_DF
+                                  fede8114         4   data ,g         3
+  _perivious_AC_Y_Ph_I_DF
+                                  fede8118         4   data ,g         3
+  _perivious_AC_B_Ph_I_DF
+                                  fede811c         4   data ,g         3
+  _act_AC_R_Ph_I
+                                  fede8120         4   data ,g         a
+  _act_AC_Y_Ph_I
+                                  fede8124         4   data ,g         6
+  _act_AC_B_Ph_I
+                                  fede8128         4   data ,g         2
+  _df_Cof_AC_V
+                                  fede812c         4   data ,g         5
+  _perivious_AC_R_Ph_V_DF
+                                  fede8130         4   data ,g         3
+  _perivious_AC_Y_Ph_V_DF
+                                  fede8134         4   data ,g         3
+  _perivious_AC_B_Ph_V_DF
+                                  fede8138         4   data ,g         3
+  _act_AC_R_Ph_V
+                                  fede813c         4   data ,g         3
+  _act_AC_Y_Ph_V
+                                  fede8140         4   data ,g         2
+  _act_AC_B_Ph_V
+                                  fede8144         4   data ,g         2
+  _df_Cof_DC_I
+                                  fede8148         4   data ,g         6
+  _perivious_DC_Bus_I_DF
+                                  fede814c         4   data ,g         3
+  _act_DC_Bus_I
+                                  fede8150         4   data ,g         7
+  _df_Cof_DC_V
+                                  fede8154         4   data ,g         0
+  _perivious_DC_Bus_V_DF
+                                  fede8158         4   data ,g         3
+  _act_DC_Bus_V
+                                  fede815c         4   data ,g         2
+  _df_Cof_TPS
+                                  fede8160         4   data ,g         3
+  _perivious_TPS1_V_DF
+                                  fede8164         4   data ,g         3
+  _act_TPS1_V
+                                  fede8168         4   data ,g         2
+  _perivious_TPS2_V_DF
+                                  fede816c         4   data ,g         3
+  _act_TPS2_V
+                                  fede8170         4   data ,g         2
+  _df_Cof_PS
+                                  fede8174         4   data ,g         3
+  _perivious_Mon_5V_DF
+                                  fede8178         4   data ,g         3
+  _act_5V
+                                  fede817c         4   data ,g         2
+  _perivious_Mon_A_5V_DF
+                                  fede8180         4   data ,g         3
+  _act_A_5V
+                                  fede8184         4   data ,g         2
+  _i_AC_R_Ph_CAL
+                                  fede8188         4   data ,g         0
+FILE=DefaultBuild\Trapezoidal_Mode.obj
+                                  fede818c  fede81ba        2f
+  _tpz_Duty
+                                  fede818c         2   data ,g         4
+  _sector
+                                  fede818e         1   data ,g        22
+  _hall_A
+                                  fede818f         1   data ,g        12
+  _hall_B
+                                  fede8190         1   data ,g        12
+  _hall_C
+                                  fede8191         1   data ,g        12
+  _mode_SW
+                                  fede8192         1   data ,g         0
+  _forward_REV_SW
+                                  fede8193         1   data ,g         0
+  _cruise_Cont_SW
+                                  fede8194         1   data ,g         0
+  _park_SW
+                                  fede8195         1   data ,g         0
+  _rear_Break_SW
+                                  fede8196         1   data ,g         0
+  _front_Break_SW
+                                  fede8197         1   data ,g         0
+  _side_Stand_SW
+                                  fede8198         1   data ,g         0
+  _kill_SW
+                                  fede8199         1   data ,g         0
+  _anti_Theft_Lock_Cont_SW
+                                  fede819a         1   data ,g         0
+  _gate_Deriver_Cond
+                                  fede819b         1   data ,g         4
+  _sect_Deg
+                                  fede819c         2   data ,g        12
+  _speed_Counter
+                                  fede819e         2   data ,g         c
+  _speed_Esti_Counter
+                                  fede81a0         2   data ,g         3
+  _prev_sect
+                                  fede81a2         1   data ,g         8
+  _freq
+                                  fede81a4         2   data ,g         4
+  _freq_Add
+                                  fede81a6         2   data ,g         7
+  _freq_Sum
+                                  fede81a8         4   data ,g         6
+  _freq_Sum_Cnt
+                                  fede81ac         1   data ,g         6
+  _speed_RPM
+                                  fede81ae         2   data ,g         4
+  _delta_Theta
+                                  fede81b0         4   data ,g         6
+  _delta_Theta_cnt
+                                  fede81b4         4   data ,g         8
+  _ele_Theta
+                                  fede81b8         1   data ,g         7
+  _no_of_Pole_pair
+                                  fede81b9         1   data ,g         2
+  _mot_Forward
+                                  fede81ba         1   data ,g         8
+FILE=DefaultBuild\Fault_Analysis.obj
+                                  fede81bc  fede81da        1f
+  _pGood_15V
+                                  fede81bc         1   data ,g         2
+  _shoot_Through_Fault
+                                  fede81bd         1   data ,g         4
+  _ocp_Fault
+                                  fede81be         1   data ,g         4
+  _fault_Hall_Sens
+                                  fede81bf         1   data ,g         2
+  _fault_I_AC_R_Sens
+                                  fede81c0         1   data ,g         2
+  _fault_I_AC_Y_Sens
+                                  fede81c1         1   data ,g         2
+  _fault_I_AC_B_Sens
+                                  fede81c2         1   data ,g         2
+  _fault_I_DC_Sens
+                                  fede81c3         1   data ,g         2
+  _fault_V_AC_R_Sens
+                                  fede81c4         1   data ,g         2
+  _fault_V_AC_Y_Sens
+                                  fede81c5         1   data ,g         2
+  _fault_V_AC_B_Sens
+                                  fede81c6         1   data ,g         2
+  _fault_V_DC_Sens
+                                  fede81c7         1   data ,g         2
+  _fault_Throttel_1_Sens
+                                  fede81c8         1   data ,g         2
+  _fault_Throttel_2_Sens
+                                  fede81c9         1   data ,g         2
+  _fault_Mot_Tem_Sens
+                                  fede81ca         1   data ,g         2
+  _inverter_Tem_NTC_R_Sens
+                                  fede81cb         1   data ,g         2
+  _inverter_Tem_NTC_Y_Sens
+                                  fede81cc         1   data ,g         2
+  _inverter_Tem_NTC_B_Sens
+                                  fede81cd         1   data ,g         2
+  _mon_Aux_5V_Measure
+                                  fede81ce         1   data ,g         2
+  _mon_Aux_A_5V_Measure
+                                  fede81cf         1   data ,g         2
+  _pGood_15V_Monitor
+                                  fede81d0         1   data ,g         3
+  _shoot_Through_Fault_Detect
+                                  fede81d1         1   data ,g         4
+  _ocp_Fault_Detect
+                                  fede81d2         1   data ,g         4
+  _fault_Phase_OC
+                                  fede81d3         1   data ,g         2
+  _fault_Phase_SC
+                                  fede81d4         1   data ,g         2
+  _fault_DC_BUS_OC
+                                  fede81d5         1   data ,g         2
+  _fault_DC_BUS_SC
+                                  fede81d6         1   data ,g         2
+  _fault_DC_BUS_OV
+                                  fede81d7         1   data ,g         2
+  _fault_DC_BUS_UV
+                                  fede81d8         1   data ,g         2
+  _fault_MOT_OT
+                                  fede81d9         1   data ,g         2
+  _fault_INV_OT
+                                  fede81da         1   data ,g         4
+FILE=DefaultBuild\Motor_Control.obj
+                                  fede81dc  fede81e7         c
+  _PWM_MODE_Switch
+                                  fede81dc         1   data ,g         6
+  _soft_start_delay
+                                  fede81dd         1   data ,g         0
+  _sect_Cycle_Cnt
+                                  fede81de         2   data ,g         9
+  _sect_Cycle_CLR_Delay_Cnt
+                                  fede81e0         2   data ,g         7
+  _pre_Mode_Chang_sector
+                                  fede81e2         1   data ,g         6
+  _throttle_Read
+                                  fede81e4         4   data ,g         0
+FILE=DefaultBuild\Sinusoidal_Mode.obj
+                                  fede81e8  fede8223        3c
+  _theta1
+                                  fede81e8         4   data ,g         7
+  _OFFSET_THE
+                                  fede81ec         1   data ,g         4
+  _rotor_Theta
+                                  fede81f0         4   data ,g         3
+  _rotor_Theta1
+                                  fede81f4         4   data ,g         3
+  _sine_Theta
+                                  fede81f8         4   data ,g         5
+  _cose_Theta
+                                  fede81fc         4   data ,g         5
+  _v_q
+                                  fede8200         2   data ,g         c
+  _v_d
+                                  fede8202         2   data ,g         3
+  _v_Alpha
+                                  fede8204         4   data ,g         5
+  _v_Beta
+                                  fede8208         4   data ,g         4
+  _va
+                                  fede820c         4   data ,g         3
+  _vb
+                                  fede8210         4   data ,g         3
+  _vc
+                                  fede8214         4   data ,g         3
+  _sin_Duty_U
+                                  fede8218         2   data ,g         3
+  _sin_Duty_V
+                                  fede821a         2   data ,g         3
+  _sin_Duty_W
+                                  fede821c         2   data ,g         3
+  _vd_ratio
+                                  fede8220         4   data ,g         2
+
+SECTION=.bss
+FILE=DefaultBuild\Config_CGC.obj
+                                  fede8224  fede8227         4
+  _g_cg_sync_read
+                                  fede8224         4   data ,g         e
+FILE=DefaultBuild\CAN_FD.obj
+                                  fede8228  fede8237        10
+  _rx_msg_DLC
+                                  fede8228         1   data ,g         2
+  _rx_msg_ID
+                                  fede822c         4   data ,g         2
+  _rx_msg_data0
+                                  fede8230         4   data ,g         2
+  _rx_msg_data1
+                                  fede8234         4   data ,g         2
+
+SECTION=.stack.bss
+FILE=DefaultBuild\cstart.obj
+                                  fede8238  fede8437       200
+  _stacktop
+                                  fede8438         0   none ,l         1
+
+Absolute value symbols
+FILE=rlink_generates_01
+  __gp_data
+                                  00000000         0   none ,g         1
+  __ep_data
+                                  00000000         0   none ,g         1
+FILE=rlink_generates_02
+  __s.text
+                                  00008414         0   none ,g         0
+  __e.text
+                                  0000b3b0         0   none ,g         0
+  __S_text
+                                  00008414         0   none ,g         0
+  __E_text
+                                  0000b3b0         0   none ,g         0
+  __sRESET
+                                  00000000         0   none ,g         0
+  __eRESET
+                                  000001f8         0   none ,g         0
+  __SRESET
+                                  00000000         0   none ,g         0
+  __ERESET
+                                  000001f8         0   none ,g         0
+  __s.data
+                                  0000b3b0         0   none ,g         1
+  __e.data
+                                  0000b5d4         0   none ,g         1
+  __s.data.R
+                                  fede8000         0   none ,g         1
+  __e.data.R
+                                  fede8224         0   none ,g         0
+  __S_data
+                                  0000b3b0         0   none ,g         0
+  __E_data
+                                  0000b5d4         0   none ,g         0
+  __S_data_R
+                                  fede8000         0   none ,g         0
+  __E_data_R
+                                  fede8224         0   none ,g         0
+  __s.bss
+                                  fede8224         0   none ,g         1
+  __e.bss
+                                  fede8238         0   none ,g         1
+  __S_bss
+                                  fede8224         0   none ,g         0
+  __E_bss
+                                  fede8238         0   none ,g         0
+  __s.const
+                                  00008000         0   none ,g         0
+  __e.const
+                                  00008400         0   none ,g         0
+  __S_const
+                                  00008000         0   none ,g         0
+  __E_const
+                                  00008400         0   none ,g         0
+  __s.stack.bss
+                                  fede8238         0   none ,g         0
+  __e.stack.bss
+                                  fede8438         0   none ,g         0
+  __S_stack_bss
+                                  fede8238         0   none ,g         0
+  __E_stack_bss
+                                  fede8438         0   none ,g         0
+  __s.INIT_DSEC.const
+                                  00008400         0   none ,g         1
+  __e.INIT_DSEC.const
+                                  0000840c         0   none ,g         1
+  __S_INIT_DSEC_const
+                                  00008400         0   none ,g         0
+  __E_INIT_DSEC_const
+                                  0000840c         0   none ,g         0
+  __s.INIT_BSEC.const
+                                  0000840c         0   none ,g         1
+  __e.INIT_BSEC.const
+                                  00008414         0   none ,g         1
+  __S_INIT_BSEC_const
+                                  0000840c         0   none ,g         0
+  __E_INIT_BSEC_const
+                                  00008414         0   none ,g         0
+  __sEIINTTBL.const
+                                  00000200         0   none ,g         1
+  __eEIINTTBL.const
+                                  00000798         0   none ,g         0
+  __SEIINTTBL_const
+                                  00000200         0   none ,g         0
+  __EEIINTTBL_const
+                                  00000798         0   none ,g         0
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Cross Reference List ***
+
+No   Unit Name   Global.Symbol   Location External Infomation
+---- ----------- --------------- -------- ---------------------
+0001 boot
+     SECTION=.text
+     SECTION=RESET
+0002 cstart
+     SECTION=.text
+                 __cstart
+                                 000084ae 0001(0000846e:.text)
+     SECTION=.data
+     SECTION=.bss
+     SECTION=.const
+     SECTION=.stack.bss
+     SECTION=.INIT_DSEC.const
+     SECTION=.INIT_BSEC.const
+     SECTION=.data.R
+0003 main
+     SECTION=.text
+                 _main
+                                 00008520 0002(00008512:.text)
+                 _r_main_userinit
+                                 00008548 0003(00008525:.text)
+     SECTION=.data.R
+                 _main_cnt
+                                 fede8000 0003(0000853a:.text)
+                                          0003(0000853e:.text)
+                                          0003(00008544:.text)
+                 _read_val
+                                 fede8004
+     SECTION=.data
+0004 Config_CGC
+     SECTION=.text
+                 _R_CGC_Create
+                                 0000855c 0005(000089bf:.text)
+     SECTION=.bss
+                 _g_cg_sync_read
+                                 fede8224 0004(000089ac:.text)
+                                          0004(000089b0:.text)
+                                          0011(000099dc:.text)
+                                          0011(000099e0:.text)
+                                          0011(00009a0a:.text)
+                                          0011(00009a14:.text)
+                                          0012(00009b5e:.text)
+                                          0012(00009b62:.text)
+                                          0013(00009c60:.text)
+                                          0013(00009c64:.text)
+                                          0013(00009ca2:.text)
+                                          0013(00009ca6:.text)
+                                          0016(0000a114:.text)
+                                          0016(0000a11e:.text)
+0005 Systeminit
+     SECTION=.text
+                 _R_Systeminit
+                                 000089b6 0003(00008551:.text)
+0006 intvector
+     SECTION=EIINTTBL.const
+                 _INT_Vectors
+                                 00000200
+0007 DummyInt
+     SECTION=.text
+                 _eiint0
+                                 000089de 0006(00000200:EIINTTBL.const)
+                 _eiint1
+                                 000089e0 0006(00000204:EIINTTBL.const)
+                 _eiint2
+                                 000089e2 0006(00000208:EIINTTBL.const)
+                 _eiint3
+                                 000089e4 0006(0000020c:EIINTTBL.const)
+                 _eiint4
+                                 000089e6 0006(00000210:EIINTTBL.const)
+                 _eiint5
+                                 000089e8 0006(00000214:EIINTTBL.const)
+                 _eiint6
+                                 000089ea 0006(00000218:EIINTTBL.const)
+                 _eiint7
+                                 000089ec 0006(0000021c:EIINTTBL.const)
+                 _eiint8
+                                 000089ee 0006(00000220:EIINTTBL.const)
+                 _eiint9
+                                 000089f0 0006(00000224:EIINTTBL.const)
+                 _eiint10
+                                 000089f2 0006(00000228:EIINTTBL.const)
+                 _eiint11
+                                 000089f4 0006(0000022c:EIINTTBL.const)
+                 _eiint12
+                                 000089f6 0006(00000230:EIINTTBL.const)
+                 _eiint13
+                                 000089f8 0006(00000234:EIINTTBL.const)
+                 _eiint14
+                                 000089fa 0006(00000238:EIINTTBL.const)
+                 _eiint15
+                                 000089fc 0006(0000023c:EIINTTBL.const)
+                 _eiint16
+                                 000089fe 0006(00000240:EIINTTBL.const)
+                 _eiint17
+                                 00008a00 0006(00000244:EIINTTBL.const)
+                 _eiint18
+                                 00008a02 0006(00000248:EIINTTBL.const)
+                 _eiint19
+                                 00008a04 0006(0000024c:EIINTTBL.const)
+                 _eiint20
+                                 00008a06 0006(00000250:EIINTTBL.const)
+                 _eiint21
+                                 00008a08 0006(00000254:EIINTTBL.const)
+                 _eiint22
+                                 00008a0a 0006(00000258:EIINTTBL.const)
+                 _eiint23
+                                 00008a0c
+                 _eiint24
+                                 00008a0e 0006(00000260:EIINTTBL.const)
+                 _eiint25
+                                 00008a10 0006(00000264:EIINTTBL.const)
+                 _eiint26
+                                 00008a12
+                 _eiint27
+                                 00008a14 0006(0000026c:EIINTTBL.const)
+                 _eiint28
+                                 00008a16 0006(00000270:EIINTTBL.const)
+                 _eiint29
+                                 00008a18 0006(00000274:EIINTTBL.const)
+                 _eiint30
+                                 00008a1a 0006(00000278:EIINTTBL.const)
+                 _eiint31
+                                 00008a1c 0006(0000027c:EIINTTBL.const)
+                 _eiint32
+                                 00008a1e 0006(00000280:EIINTTBL.const)
+                 _eiint33
+                                 00008a20 0006(00000284:EIINTTBL.const)
+                 _eiint34
+                                 00008a22 0006(00000288:EIINTTBL.const)
+                 _eiint35
+                                 00008a24 0006(0000028c:EIINTTBL.const)
+                 _eiint36
+                                 00008a26 0006(00000290:EIINTTBL.const)
+                 _eiint37
+                                 00008a28 0006(00000294:EIINTTBL.const)
+                 _eiint38
+                                 00008a2a 0006(00000298:EIINTTBL.const)
+                 _eiint39
+                                 00008a2c 0006(0000029c:EIINTTBL.const)
+                 _eiint40
+                                 00008a2e
+                 _eiint41
+                                 00008a30 0006(000002a4:EIINTTBL.const)
+                 _eiint42
+                                 00008a32 0006(000002a8:EIINTTBL.const)
+                 _eiint43
+                                 00008a34 0006(000002ac:EIINTTBL.const)
+                 _eiint44
+                                 00008a36 0006(000002b0:EIINTTBL.const)
+                 _eiint45
+                                 00008a38 0006(000002b4:EIINTTBL.const)
+                 _eiint46
+                                 00008a3a 0006(000002b8:EIINTTBL.const)
+                 _eiint47
+                                 00008a3c 0006(000002bc:EIINTTBL.const)
+                 _eiint48
+                                 00008a3e 0006(000002c0:EIINTTBL.const)
+                 _eiint49
+                                 00008a40 0006(000002c4:EIINTTBL.const)
+                 _eiint50
+                                 00008a42 0006(000002c8:EIINTTBL.const)
+                 _eiint51
+                                 00008a44 0006(000002cc:EIINTTBL.const)
+                 _eiint52
+                                 00008a46 0006(000002d0:EIINTTBL.const)
+                 _eiint53
+                                 00008a48 0006(000002d4:EIINTTBL.const)
+                 _eiint54
+                                 00008a4a 0006(000002d8:EIINTTBL.const)
+                 _eiint55
+                                 00008a4c 0006(000002dc:EIINTTBL.const)
+                 _eiint56
+                                 00008a4e 0006(000002e0:EIINTTBL.const)
+                 _eiint57
+                                 00008a50 0006(000002e4:EIINTTBL.const)
+                 _eiint58
+                                 00008a52 0006(000002e8:EIINTTBL.const)
+                 _eiint59
+                                 00008a54 0006(000002ec:EIINTTBL.const)
+                 _eiint60
+                                 00008a56 0006(000002f0:EIINTTBL.const)
+                 _eiint61
+                                 00008a58 0006(000002f4:EIINTTBL.const)
+                 _eiint62
+                                 00008a5a 0006(000002f8:EIINTTBL.const)
+                 _eiint63
+                                 00008a5c 0006(000002fc:EIINTTBL.const)
+                 _eiint64
+                                 00008a5e 0006(00000300:EIINTTBL.const)
+                 _eiint65
+                                 00008a60 0006(00000304:EIINTTBL.const)
+                 _eiint66
+                                 00008a62 0006(00000308:EIINTTBL.const)
+                 _eiint67
+                                 00008a64 0006(0000030c:EIINTTBL.const)
+                 _eiint68
+                                 00008a66 0006(00000310:EIINTTBL.const)
+                 _eiint69
+                                 00008a68 0006(00000314:EIINTTBL.const)
+                 _eiint70
+                                 00008a6a 0006(00000318:EIINTTBL.const)
+                 _eiint71
+                                 00008a6c 0006(0000031c:EIINTTBL.const)
+                 _eiint72
+                                 00008a6e 0006(00000320:EIINTTBL.const)
+                 _eiint73
+                                 00008a70 0006(00000324:EIINTTBL.const)
+                 _eiint74
+                                 00008a72 0006(00000328:EIINTTBL.const)
+                 _eiint75
+                                 00008a74 0006(0000032c:EIINTTBL.const)
+                 _eiint76
+                                 00008a76 0006(00000330:EIINTTBL.const)
+                 _eiint77
+                                 00008a78 0006(00000334:EIINTTBL.const)
+                 _eiint78
+                                 00008a7a 0006(00000338:EIINTTBL.const)
+                 _eiint79
+                                 00008a7c 0006(0000033c:EIINTTBL.const)
+                 _eiint80
+                                 00008a7e 0006(00000340:EIINTTBL.const)
+                 _eiint81
+                                 00008a80 0006(00000344:EIINTTBL.const)
+                 _eiint82
+                                 00008a82 0006(00000348:EIINTTBL.const)
+                 _eiint83
+                                 00008a84 0006(0000034c:EIINTTBL.const)
+                 _eiint84
+                                 00008a86
+                 _eiint85
+                                 00008a88 0006(00000354:EIINTTBL.const)
+                 _eiint86
+                                 00008a8a 0006(00000358:EIINTTBL.const)
+                 _eiint87
+                                 00008a8c 0006(0000035c:EIINTTBL.const)
+                 _eiint88
+                                 00008a8e 0006(00000360:EIINTTBL.const)
+                 _eiint89
+                                 00008a90 0006(00000364:EIINTTBL.const)
+                 _eiint90
+                                 00008a92 0006(00000368:EIINTTBL.const)
+                 _eiint91
+                                 00008a94 0006(0000036c:EIINTTBL.const)
+                 _eiint92
+                                 00008a96 0006(00000370:EIINTTBL.const)
+                 _eiint93
+                                 00008a98 0006(00000374:EIINTTBL.const)
+                 _eiint94
+                                 00008a9a 0006(00000378:EIINTTBL.const)
+                 _eiint95
+                                 00008a9c 0006(0000037c:EIINTTBL.const)
+                 _eiint96
+                                 00008a9e 0006(00000380:EIINTTBL.const)
+                 _eiint97
+                                 00008aa0 0006(00000384:EIINTTBL.const)
+                 _eiint98
+                                 00008aa2 0006(00000388:EIINTTBL.const)
+                 _eiint99
+                                 00008aa4 0006(0000038c:EIINTTBL.const)
+                 _eiint100
+                                 00008aa6 0006(00000390:EIINTTBL.const)
+                 _eiint101
+                                 00008aa8 0006(00000394:EIINTTBL.const)
+                 _eiint102
+                                 00008aaa 0006(00000398:EIINTTBL.const)
+                 _eiint103
+                                 00008aac 0006(0000039c:EIINTTBL.const)
+                 _eiint104
+                                 00008aae 0006(000003a0:EIINTTBL.const)
+                 _eiint105
+                                 00008ab0 0006(000003a4:EIINTTBL.const)
+                 _eiint106
+                                 00008ab2 0006(000003a8:EIINTTBL.const)
+                 _eiint107
+                                 00008ab4 0006(000003ac:EIINTTBL.const)
+                 _eiint108
+                                 00008ab6 0006(000003b0:EIINTTBL.const)
+                 _eiint109
+                                 00008ab8 0006(000003b4:EIINTTBL.const)
+                 _eiint110
+                                 00008aba 0006(000003b8:EIINTTBL.const)
+                 _eiint111
+                                 00008abc 0006(000003bc:EIINTTBL.const)
+                 _eiint112
+                                 00008abe 0006(000003c0:EIINTTBL.const)
+                 _eiint113
+                                 00008ac0 0006(000003c4:EIINTTBL.const)
+                 _eiint114
+                                 00008ac2 0006(000003c8:EIINTTBL.const)
+                 _eiint115
+                                 00008ac4 0006(000003cc:EIINTTBL.const)
+                 _eiint116
+                                 00008ac6 0006(000003d0:EIINTTBL.const)
+                 _eiint117
+                                 00008ac8 0006(000003d4:EIINTTBL.const)
+                 _eiint118
+                                 00008aca 0006(000003d8:EIINTTBL.const)
+                 _eiint119
+                                 00008acc 0006(000003dc:EIINTTBL.const)
+                 _eiint120
+                                 00008ace 0006(000003e0:EIINTTBL.const)
+                 _eiint121
+                                 00008ad0 0006(000003e4:EIINTTBL.const)
+                 _eiint122
+                                 00008ad2 0006(000003e8:EIINTTBL.const)
+                 _eiint123
+                                 00008ad4 0006(000003ec:EIINTTBL.const)
+                 _eiint124
+                                 00008ad6 0006(000003f0:EIINTTBL.const)
+                 _eiint125
+                                 00008ad8 0006(000003f4:EIINTTBL.const)
+                 _eiint126
+                                 00008ada 0006(000003f8:EIINTTBL.const)
+                 _eiint127
+                                 00008adc 0006(000003fc:EIINTTBL.const)
+                 _eiint128
+                                 00008ade 0006(00000400:EIINTTBL.const)
+                 _eiint129
+                                 00008ae0 0006(00000404:EIINTTBL.const)
+                 _eiint130
+                                 00008ae2 0006(00000408:EIINTTBL.const)
+                 _eiint131
+                                 00008ae4 0006(0000040c:EIINTTBL.const)
+                 _eiint132
+                                 00008ae6 0006(00000410:EIINTTBL.const)
+                 _eiint133
+                                 00008ae8 0006(00000414:EIINTTBL.const)
+                 _eiint134
+                                 00008aea 0006(00000418:EIINTTBL.const)
+                 _eiint135
+                                 00008aec 0006(0000041c:EIINTTBL.const)
+                 _eiint136
+                                 00008aee 0006(00000420:EIINTTBL.const)
+                 _eiint137
+                                 00008af0 0006(00000424:EIINTTBL.const)
+                 _eiint138
+                                 00008af2 0006(00000428:EIINTTBL.const)
+                 _eiint139
+                                 00008af4 0006(0000042c:EIINTTBL.const)
+                 _eiint140
+                                 00008af6 0006(00000430:EIINTTBL.const)
+                 _eiint141
+                                 00008af8 0006(00000434:EIINTTBL.const)
+                 _eiint142
+                                 00008afa
+                 _eiint143
+                                 00008b10
+                 _eiint144
+                                 00008b12 0006(00000440:EIINTTBL.const)
+                 _eiint145
+                                 00008b14 0006(00000444:EIINTTBL.const)
+                 _eiint146
+                                 00008b16 0006(00000448:EIINTTBL.const)
+                 _eiint147
+                                 00008b18 0006(0000044c:EIINTTBL.const)
+                 _eiint148
+                                 00008b1a 0006(00000450:EIINTTBL.const)
+                 _eiint149
+                                 00008b1c 0006(00000454:EIINTTBL.const)
+                 _eiint150
+                                 00008b1e 0006(00000458:EIINTTBL.const)
+                 _eiint151
+                                 00008b20 0006(0000045c:EIINTTBL.const)
+                 _eiint152
+                                 00008b22 0006(00000460:EIINTTBL.const)
+                 _eiint153
+                                 00008b24 0006(00000464:EIINTTBL.const)
+                 _eiint154
+                                 00008b26 0006(00000468:EIINTTBL.const)
+                 _eiint155
+                                 00008b28 0006(0000046c:EIINTTBL.const)
+                 _eiint156
+                                 00008b2a 0006(00000470:EIINTTBL.const)
+                 _eiint157
+                                 00008b2c 0006(00000474:EIINTTBL.const)
+                 _eiint158
+                                 00008b2e 0006(00000478:EIINTTBL.const)
+                 _eiint159
+                                 00008b30 0006(0000047c:EIINTTBL.const)
+                 _eiint160
+                                 00008b32 0006(00000480:EIINTTBL.const)
+                 _eiint161
+                                 00008b34 0006(00000484:EIINTTBL.const)
+                 _eiint162
+                                 00008b36 0006(00000488:EIINTTBL.const)
+                 _eiint163
+                                 00008b38 0006(0000048c:EIINTTBL.const)
+                 _eiint164
+                                 00008b3a 0006(00000490:EIINTTBL.const)
+                 _eiint165
+                                 00008b3c 0006(00000494:EIINTTBL.const)
+                 _eiint166
+                                 00008b3e 0006(00000498:EIINTTBL.const)
+                 _eiint167
+                                 00008b40 0006(0000049c:EIINTTBL.const)
+                 _eiint168
+                                 00008b42 0006(000004a0:EIINTTBL.const)
+                 _eiint169
+                                 00008b44 0006(000004a4:EIINTTBL.const)
+                 _eiint170
+                                 00008b46 0006(000004a8:EIINTTBL.const)
+                 _eiint171
+                                 00008b48 0006(000004ac:EIINTTBL.const)
+                 _eiint172
+                                 00008b4a 0006(000004b0:EIINTTBL.const)
+                 _eiint173
+                                 00008b4c 0006(000004b4:EIINTTBL.const)
+                 _eiint174
+                                 00008b4e 0006(000004b8:EIINTTBL.const)
+                 _eiint175
+                                 00008b50 0006(000004bc:EIINTTBL.const)
+                 _eiint176
+                                 00008b52 0006(000004c0:EIINTTBL.const)
+                 _eiint177
+                                 00008b54 0006(000004c4:EIINTTBL.const)
+                 _eiint178
+                                 00008b56 0006(000004c8:EIINTTBL.const)
+                 _eiint179
+                                 00008b58 0006(000004cc:EIINTTBL.const)
+                 _eiint180
+                                 00008b5a 0006(000004d0:EIINTTBL.const)
+                 _eiint181
+                                 00008b5c 0006(000004d4:EIINTTBL.const)
+                 _eiint182
+                                 00008b5e 0006(000004d8:EIINTTBL.const)
+                 _eiint183
+                                 00008b60 0006(000004dc:EIINTTBL.const)
+                 _eiint184
+                                 00008b62 0006(000004e0:EIINTTBL.const)
+                 _eiint185
+                                 00008b64 0006(000004e4:EIINTTBL.const)
+                 _eiint186
+                                 00008b66 0006(000004e8:EIINTTBL.const)
+                 _eiint187
+                                 00008b68 0006(000004ec:EIINTTBL.const)
+                 _eiint188
+                                 00008b6a 0006(000004f0:EIINTTBL.const)
+                 _eiint189
+                                 00008b6c 0006(000004f4:EIINTTBL.const)
+                 _eiint190
+                                 00008b6e 0006(000004f8:EIINTTBL.const)
+                 _eiint191
+                                 00008b70 0006(000004fc:EIINTTBL.const)
+                 _eiint192
+                                 00008b72 0006(00000500:EIINTTBL.const)
+                 _eiint193
+                                 00008b74 0006(00000504:EIINTTBL.const)
+                 _eiint194
+                                 00008b76 0006(00000508:EIINTTBL.const)
+                 _eiint195
+                                 00008b78 0006(0000050c:EIINTTBL.const)
+                 _eiint196
+                                 00008b7a 0006(00000510:EIINTTBL.const)
+                 _eiint197
+                                 00008b7c 0006(00000514:EIINTTBL.const)
+                 _eiint198
+                                 00008b7e 0006(00000518:EIINTTBL.const)
+                 _eiint199
+                                 00008b80 0006(0000051c:EIINTTBL.const)
+                 _eiint200
+                                 00008b82 0006(00000520:EIINTTBL.const)
+                 _eiint201
+                                 00008b84 0006(00000524:EIINTTBL.const)
+                 _eiint202
+                                 00008b86 0006(00000528:EIINTTBL.const)
+                 _eiint203
+                                 00008b88 0006(0000052c:EIINTTBL.const)
+                 _eiint204
+                                 00008b8a 0006(00000530:EIINTTBL.const)
+                 _eiint205
+                                 00008b8c 0006(00000534:EIINTTBL.const)
+                 _eiint206
+                                 00008b8e 0006(00000538:EIINTTBL.const)
+                 _eiint207
+                                 00008b90 0006(0000053c:EIINTTBL.const)
+                 _eiint208
+                                 00008b92 0006(00000540:EIINTTBL.const)
+                 _eiint209
+                                 00008b94 0006(00000544:EIINTTBL.const)
+                 _eiint210
+                                 00008b96 0006(00000548:EIINTTBL.const)
+                 _eiint211
+                                 00008b98 0006(0000054c:EIINTTBL.const)
+                 _eiint212
+                                 00008b9a 0006(00000550:EIINTTBL.const)
+                 _eiint213
+                                 00008b9c 0006(00000554:EIINTTBL.const)
+                 _eiint214
+                                 00008b9e 0006(00000558:EIINTTBL.const)
+                 _eiint215
+                                 00008ba0 0006(0000055c:EIINTTBL.const)
+                 _eiint216
+                                 00008ba2 0006(00000560:EIINTTBL.const)
+                 _eiint217
+                                 00008ba4 0006(00000564:EIINTTBL.const)
+                 _eiint218
+                                 00008ba6 0006(00000568:EIINTTBL.const)
+                 _eiint219
+                                 00008ba8 0006(0000056c:EIINTTBL.const)
+                 _eiint220
+                                 00008baa 0006(00000570:EIINTTBL.const)
+                 _eiint221
+                                 00008bac 0006(00000574:EIINTTBL.const)
+                 _eiint222
+                                 00008bae 0006(00000578:EIINTTBL.const)
+                 _eiint223
+                                 00008bb0 0006(0000057c:EIINTTBL.const)
+                 _eiint224
+                                 00008bb2 0006(00000580:EIINTTBL.const)
+                 _eiint225
+                                 00008bb4 0006(00000584:EIINTTBL.const)
+                 _eiint226
+                                 00008bb6 0006(00000588:EIINTTBL.const)
+                 _eiint227
+                                 00008bb8 0006(0000058c:EIINTTBL.const)
+                 _eiint228
+                                 00008bba 0006(00000590:EIINTTBL.const)
+                 _eiint229
+                                 00008bbc 0006(00000594:EIINTTBL.const)
+                 _eiint230
+                                 00008bbe 0006(00000598:EIINTTBL.const)
+                 _eiint231
+                                 00008bc0 0006(0000059c:EIINTTBL.const)
+                 _eiint232
+                                 00008bc2 0006(000005a0:EIINTTBL.const)
+                 _eiint233
+                                 00008bc4 0006(000005a4:EIINTTBL.const)
+                 _eiint234
+                                 00008bc6 0006(000005a8:EIINTTBL.const)
+                 _eiint235
+                                 00008bc8 0006(000005ac:EIINTTBL.const)
+                 _eiint236
+                                 00008bca 0006(000005b0:EIINTTBL.const)
+                 _eiint237
+                                 00008bcc 0006(000005b4:EIINTTBL.const)
+                 _eiint238
+                                 00008bce 0006(000005b8:EIINTTBL.const)
+                 _eiint239
+                                 00008bd0 0006(000005bc:EIINTTBL.const)
+                 _eiint240
+                                 00008bd2 0006(000005c0:EIINTTBL.const)
+                 _eiint241
+                                 00008bd4 0006(000005c4:EIINTTBL.const)
+                 _eiint242
+                                 00008bd6 0006(000005c8:EIINTTBL.const)
+                 _eiint243
+                                 00008bd8 0006(000005cc:EIINTTBL.const)
+                 _eiint244
+                                 00008bda 0006(000005d0:EIINTTBL.const)
+                 _eiint245
+                                 00008bdc 0006(000005d4:EIINTTBL.const)
+                 _eiint246
+                                 00008bde 0006(000005d8:EIINTTBL.const)
+                 _eiint247
+                                 00008be0 0006(000005dc:EIINTTBL.const)
+                 _eiint248
+                                 00008be2 0006(000005e0:EIINTTBL.const)
+                 _eiint249
+                                 00008be4 0006(000005e4:EIINTTBL.const)
+                 _eiint250
+                                 00008be6 0006(000005e8:EIINTTBL.const)
+                 _eiint251
+                                 00008be8 0006(000005ec:EIINTTBL.const)
+                 _eiint252
+                                 00008bea 0006(000005f0:EIINTTBL.const)
+                 _eiint253
+                                 00008bec 0006(000005f4:EIINTTBL.const)
+                 _eiint254
+                                 00008bee 0006(000005f8:EIINTTBL.const)
+                 _eiint255
+                                 00008bf0 0006(000005fc:EIINTTBL.const)
+                 _eiint256
+                                 00008bf2 0006(00000600:EIINTTBL.const)
+                 _eiint257
+                                 00008bf4 0006(00000604:EIINTTBL.const)
+                 _eiint258
+                                 00008bf6 0006(00000608:EIINTTBL.const)
+                 _eiint259
+                                 00008bf8 0006(0000060c:EIINTTBL.const)
+                 _eiint260
+                                 00008bfa 0006(00000610:EIINTTBL.const)
+                 _eiint261
+                                 00008bfc 0006(00000614:EIINTTBL.const)
+                 _eiint262
+                                 00008bfe 0006(00000618:EIINTTBL.const)
+                 _eiint263
+                                 00008c00 0006(0000061c:EIINTTBL.const)
+                 _eiint264
+                                 00008c02 0006(00000620:EIINTTBL.const)
+                 _eiint265
+                                 00008c04 0006(00000624:EIINTTBL.const)
+                 _eiint266
+                                 00008c06 0006(00000628:EIINTTBL.const)
+                 _eiint267
+                                 00008c08 0006(0000062c:EIINTTBL.const)
+                 _eiint268
+                                 00008c0a 0006(00000630:EIINTTBL.const)
+                 _eiint269
+                                 00008c0c 0006(00000634:EIINTTBL.const)
+                 _eiint270
+                                 00008c0e 0006(00000638:EIINTTBL.const)
+                 _eiint271
+                                 00008c10 0006(0000063c:EIINTTBL.const)
+                 _eiint272
+                                 00008c12 0006(00000640:EIINTTBL.const)
+                 _eiint273
+                                 00008c14 0006(00000644:EIINTTBL.const)
+                 _eiint274
+                                 00008c16 0006(00000648:EIINTTBL.const)
+                 _eiint275
+                                 00008c18 0006(0000064c:EIINTTBL.const)
+                 _eiint276
+                                 00008c1a 0006(00000650:EIINTTBL.const)
+                 _eiint277
+                                 00008c1c 0006(00000654:EIINTTBL.const)
+                 _eiint278
+                                 00008c1e 0006(00000658:EIINTTBL.const)
+                 _eiint279
+                                 00008c20 0006(0000065c:EIINTTBL.const)
+                 _eiint280
+                                 00008c22 0006(00000660:EIINTTBL.const)
+                 _eiint281
+                                 00008c24 0006(00000664:EIINTTBL.const)
+                 _eiint282
+                                 00008c26 0006(00000668:EIINTTBL.const)
+                 _eiint283
+                                 00008c28 0006(0000066c:EIINTTBL.const)
+                 _eiint284
+                                 00008c2a 0006(00000670:EIINTTBL.const)
+                 _eiint285
+                                 00008c2c 0006(00000674:EIINTTBL.const)
+                 _eiint286
+                                 00008c2e 0006(00000678:EIINTTBL.const)
+                 _eiint287
+                                 00008c30 0006(0000067c:EIINTTBL.const)
+                 _eiint288
+                                 00008c32 0006(00000680:EIINTTBL.const)
+                 _eiint289
+                                 00008c34 0006(00000684:EIINTTBL.const)
+                 _eiint290
+                                 00008c36 0006(00000688:EIINTTBL.const)
+                 _eiint291
+                                 00008c38 0006(0000068c:EIINTTBL.const)
+                 _eiint292
+                                 00008c3a 0006(00000690:EIINTTBL.const)
+                 _eiint293
+                                 00008c3c 0006(00000694:EIINTTBL.const)
+                 _eiint294
+                                 00008c3e 0006(00000698:EIINTTBL.const)
+                 _eiint295
+                                 00008c40 0006(0000069c:EIINTTBL.const)
+                 _eiint296
+                                 00008c42 0006(000006a0:EIINTTBL.const)
+                 _eiint297
+                                 00008c44 0006(000006a4:EIINTTBL.const)
+                 _eiint298
+                                 00008c46 0006(000006a8:EIINTTBL.const)
+                 _eiint299
+                                 00008c48 0006(000006ac:EIINTTBL.const)
+                 _eiint300
+                                 00008c4a 0006(000006b0:EIINTTBL.const)
+                 _eiint301
+                                 00008c4c 0006(000006b4:EIINTTBL.const)
+                 _eiint302
+                                 00008c4e 0006(000006b8:EIINTTBL.const)
+                 _eiint303
+                                 00008c50 0006(000006bc:EIINTTBL.const)
+                 _eiint304
+                                 00008c52 0006(000006c0:EIINTTBL.const)
+                 _eiint305
+                                 00008c54 0006(000006c4:EIINTTBL.const)
+                 _eiint306
+                                 00008c56 0006(000006c8:EIINTTBL.const)
+                 _eiint307
+                                 00008c58 0006(000006cc:EIINTTBL.const)
+                 _eiint308
+                                 00008c5a 0006(000006d0:EIINTTBL.const)
+                 _eiint309
+                                 00008c5c 0006(000006d4:EIINTTBL.const)
+                 _eiint310
+                                 00008c5e 0006(000006d8:EIINTTBL.const)
+                 _eiint311
+                                 00008c60 0006(000006dc:EIINTTBL.const)
+                 _eiint312
+                                 00008c62 0006(000006e0:EIINTTBL.const)
+                 _eiint313
+                                 00008c64 0006(000006e4:EIINTTBL.const)
+                 _eiint314
+                                 00008c66 0006(000006e8:EIINTTBL.const)
+                 _eiint315
+                                 00008c68 0006(000006ec:EIINTTBL.const)
+                 _eiint316
+                                 00008c6a 0006(000006f0:EIINTTBL.const)
+                 _eiint317
+                                 00008c6c 0006(000006f4:EIINTTBL.const)
+                 _eiint318
+                                 00008c6e 0006(000006f8:EIINTTBL.const)
+                 _eiint319
+                                 00008c70 0006(000006fc:EIINTTBL.const)
+                 _eiint320
+                                 00008c72 0006(00000700:EIINTTBL.const)
+                 _eiint321
+                                 00008c74 0006(00000704:EIINTTBL.const)
+                 _eiint322
+                                 00008c76 0006(00000708:EIINTTBL.const)
+                 _eiint323
+                                 00008c78 0006(0000070c:EIINTTBL.const)
+                 _eiint324
+                                 00008c7a 0006(00000710:EIINTTBL.const)
+                 _eiint325
+                                 00008c7c 0006(00000714:EIINTTBL.const)
+                 _eiint326
+                                 00008c7e 0006(00000718:EIINTTBL.const)
+                 _eiint327
+                                 00008c80 0006(0000071c:EIINTTBL.const)
+                 _eiint328
+                                 00008c82 0006(00000720:EIINTTBL.const)
+                 _eiint329
+                                 00008c84 0006(00000724:EIINTTBL.const)
+                 _eiint330
+                                 00008c86 0006(00000728:EIINTTBL.const)
+                 _eiint331
+                                 00008c88 0006(0000072c:EIINTTBL.const)
+                 _eiint332
+                                 00008c8a 0006(00000730:EIINTTBL.const)
+                 _eiint333
+                                 00008c8c 0006(00000734:EIINTTBL.const)
+                 _eiint334
+                                 00008c8e 0006(00000738:EIINTTBL.const)
+                 _eiint335
+                                 00008c90 0006(0000073c:EIINTTBL.const)
+                 _eiint336
+                                 00008c92 0006(00000740:EIINTTBL.const)
+                 _eiint337
+                                 00008c94 0006(00000744:EIINTTBL.const)
+                 _eiint338
+                                 00008c96 0006(00000748:EIINTTBL.const)
+                 _eiint339
+                                 00008c98 0006(0000074c:EIINTTBL.const)
+                 _eiint340
+                                 00008c9a 0006(00000750:EIINTTBL.const)
+                 _eiint341
+                                 00008c9c 0006(00000754:EIINTTBL.const)
+                 _eiint342
+                                 00008c9e 0006(00000758:EIINTTBL.const)
+                 _eiint343
+                                 00008ca0 0006(0000075c:EIINTTBL.const)
+                 _eiint344
+                                 00008ca2 0006(00000760:EIINTTBL.const)
+                 _eiint345
+                                 00008ca4 0006(00000764:EIINTTBL.const)
+                 _eiint346
+                                 00008ca6 0006(00000768:EIINTTBL.const)
+                 _eiint347
+                                 00008ca8 0006(0000076c:EIINTTBL.const)
+                 _eiint348
+                                 00008caa 0006(00000770:EIINTTBL.const)
+                 _eiint349
+                                 00008cac 0006(00000774:EIINTTBL.const)
+                 _eiint350
+                                 00008cae 0006(00000778:EIINTTBL.const)
+                 _eiint351
+                                 00008cb0 0006(0000077c:EIINTTBL.const)
+                 _eiint352
+                                 00008cb2 0006(00000780:EIINTTBL.const)
+                 _eiint353
+                                 00008cb4 0006(00000784:EIINTTBL.const)
+                 _eiint354
+                                 00008cb6 0006(00000788:EIINTTBL.const)
+                 _eiint355
+                                 00008cb8 0006(0000078c:EIINTTBL.const)
+                 _eiint356
+                                 00008cba 0006(00000790:EIINTTBL.const)
+                 _eiint357
+                                 00008cbc 0006(00000794:EIINTTBL.const)
+0008 Config_ADC
+     SECTION=.text
+                 _R_Config_ADCA0_Create
+                                 00008cbe 0005(000089c3:.text)
+                 _R_Config_ADCA0_Halt
+                                 00008e22
+                 _R_Config_ADCA0_SelfDiagnostic_VoltageCircuitOn
+                                 00008e3a
+                 _R_Config_ADCA0_SelfDiagnostic_VoltageCircuitOff
+                                 00008e4c
+                 _R_Config_ADCA0_ScanGroup1_OperationOn
+                                 00008e60
+                 _R_Config_ADCA0_ScanGroup1_OperationOff
+                                 00008e6a
+                 _R_Config_ADCA0_ScanGroup1_GetResult
+                                 00008e74
+0009 Config_PWM
+     SECTION=.text
+                 _Update_PWM_Duty
+                                 00008eea 0009(00009285:.text)
+                                          0018(0000aab5:.text)
+                                          0022(0000b2a3:.text)
+                 _PWM_Calculate_Timer_Count
+                                 00008f04 0009(00009081:.text)
+                 _PWM_Init_TAUD0
+                                 00008f32 0009(00009085:.text)
+                 _PWM_INLI
+                                 0000907c 0005(000089d7:.text)
+                 _PWM_PIC0_Init
+                                 000090a0 0009(00009089:.text)
+                 _PWM_Disable_INTTAUD0
+                                 0000916a 0009(00008f47:.text)
+                 _PWM_START
+                                 00009260 0003(00008529:.text)
+                 _PWM_STOP
+                                 00009278 0021(0000b07d:.text)
+     SECTION=.data.R
+                 _Timer_Count
+                                 fede8008 0009(00008f2a:.text)
+                                          0009(00008f2e:.text)
+                                          0009(00008f6c:.text)
+                                          0009(00008f70:.text)
+     SECTION=.data
+0010 Config_PORT
+     SECTION=.text
+                 _PWM_R_Pins_Create
+                                 000092e6 0009(0000908d:.text)
+                 _R_Config_PORT_Create
+                                 000095bc 0005(000089bb:.text)
+                 _Config_CAN_PORT
+                                 00009912 0014(00009e2d:.text)
+0011 Config_OSTM
+     SECTION=.text
+                 _R_Config_OSTM0_Create
+                                 000099a8 0005(000089c7:.text)
+                 _R_Config_OSTM0_Start
+                                 000099e6 0003(0000852d:.text)
+                 _R_Config_OSTM0_Stop
+                                 000099f8
+                 _R_Config_OSTM0_Set_CompareValue
+                                 00009a1a
+                 _r_Config_OSTM0_interrupt
+                                 00009a22 0006(00000350:EIINTTBL.const)
+     SECTION=.data.R
+                 _ostm_CNT
+                                 fede800c 0011(00009a48:.text)
+                                          0011(00009a4c:.text)
+                                          0011(00009a52:.text)
+     SECTION=.data
+0012 Config_TAUB0_0
+     SECTION=.text
+                 _R_Config_TAUB0_0_Create
+                                 00009a8c 0005(000089cb:.text)
+                 _R_Config_TAUB0_0_Start
+                                 00009b26 0003(00008531:.text)
+                 _R_Config_TAUB0_0_Stop
+                                 00009b40
+                 _r_Config_TAUB0_0_interrupt
+                                 00009b68 0006(00000438:EIINTTBL.const)
+     SECTION=.data.R
+                 _taub0_0_CNT
+                                 fede8010 0012(00009b8e:.text)
+                                          0012(00009b92:.text)
+                                          0012(00009b98:.text)
+     SECTION=.data
+0013 Config_TAUB0_1
+     SECTION=.text
+                 _R_Config_TAUB0_1_Create
+                                 00009bc2 0005(000089cf:.text)
+                 _R_Config_TAUB0_1_Start
+                                 00009c6a 0003(00008535:.text)
+                 _R_Config_TAUB0_1_Stop
+                                 00009c84
+                 _r_Config_TAUB0_1_interrupt
+                                 00009cac 0006(0000043c:EIINTTBL.const)
+     SECTION=.data.R
+                 _tab0_1_CNT
+                                 fede8014 0013(00009cd2:.text)
+                                          0013(00009cd6:.text)
+                                          0013(00009cdc:.text)
+     SECTION=.data
+0014 Config_CANFD
+     SECTION=.text
+                 _R_RSCAN0FD_Init
+                                 00009d06 0014(00009e31:.text)
+                 _R_CANFD_Init
+                                 00009e28 0005(000089d3:.text)
+     SECTION=.data.R
+                 _i
+                                 fede8018 0014(00009ddc:.text)
+                                          0014(00009de0:.text)
+                                          0014(00009de6:.text)
+                                          0014(00009dea:.text)
+                                          0014(00009e0e:.text)
+                                          0014(00009e12:.text)
+                                          0014(00009e18:.text)
+                                          0014(00009e1c:.text)
+     SECTION=.data
+0015 CAN_FD
+     SECTION=.text
+                 _can0_tx
+                                 00009e38
+                 _can0_rx
+                                 00009ec8 0015(0000a049:.text)
+                 _CAN_Rx_FIFO_ISR
+                                 00009f38 0006(0000025c:EIINTTBL.const)
+                 _CAN0_Tx_ISR
+                                 0000a04e 0006(00000268:EIINTTBL.const)
+     SECTION=.data.R
+                 _rx_flag
+                                 fede801c 0015(00009fa8:.text)
+                                          0015(00009fae:.text)
+                 _error_flag
+                                 fede801d
+                 _RX_Fifo_empty
+                                 fede801e 0015(00009fc8:.text)
+                                          0015(00009fce:.text)
+                 _RX_fifo_full
+                                 fede8020 0015(0000a040:.text)
+                                          0015(0000a046:.text)
+                 _RX_Fifo_msg_lost
+                                 fede8024
+                 _rx_cnt
+                                 fede8028 0015(00009f1e:.text)
+                                          0015(00009f22:.text)
+                                          0015(00009f28:.text)
+                 _ISR_Cnt
+                                 fede802c 0015(00009f98:.text)
+                                          0015(00009f9c:.text)
+                                          0015(00009fa2:.text)
+                 _CAN_Tx_Cnt
+                                 fede8030 0015(0000a08c:.text)
+                                          0015(0000a090:.text)
+                                          0015(0000a096:.text)
+     SECTION=.bss
+                 _rx_msg_DLC
+                                 fede8228 0015(00009efe:.text)
+                                          0015(00009f02:.text)
+                 _rx_msg_ID
+                                 fede822c 0015(00009ef0:.text)
+                                          0015(00009ef4:.text)
+                 _rx_msg_data0
+                                 fede8230 0015(00009f0a:.text)
+                                          0015(00009f0e:.text)
+                 _rx_msg_data1
+                                 fede8234 0015(00009f16:.text)
+                                          0015(00009f1a:.text)
+     SECTION=.data
+0016 Config_WDT
+     SECTION=.text
+                 _R_Config_WDT0_Create
+                                 0000a0ec
+                 _R_Config_WDT0_Restart
+                                 0000a132 0016(0000a12b:.text)
+                 _r_Config_WDT0_interrupt
+                                 0000a13e 0006(000002a0:EIINTTBL.const)
+0017 ADC_Result
+     SECTION=.text
+                 _Current_Read
+                                 0000a17a
+     SECTION=.data.R
+                 _mon_5V_Cnt
+                                 fede8034 0017(0000a4f6:.text)
+                                          0017(0000a4fa:.text)
+                                          0019(0000ad48:.text)
+                                          0019(0000ad4c:.text)
+                 _mon_5V_uC_V
+                                 fede8038 0017(0000a506:.text)
+                                          0017(0000a50a:.text)
+                 _mon_5V
+                                 fede803c 0017(0000a50e:.text)
+                                          0017(0000a512:.text)
+                 _mon_A_5V_Cnt
+                                 fede8040 0017(0000a54a:.text)
+                                          0017(0000a54e:.text)
+                                          0019(0000ad70:.text)
+                                          0019(0000ad74:.text)
+                 _mon_A_5V_uC_V
+                                 fede8044 0017(0000a55a:.text)
+                                          0017(0000a55e:.text)
+                 _mon_A_5V
+                                 fede8048 0017(0000a562:.text)
+                                          0017(0000a566:.text)
+                 _dc_Bus_V_Cnt
+                                 fede804c 0017(0000a3a0:.text)
+                                          0017(0000a3a4:.text)
+                                          0019(0000abd4:.text)
+                                          0019(0000abd8:.text)
+                 _dc_Bus_V
+                                 fede8050 0017(0000a3ba:.text)
+                                          0017(0000a3be:.text)
+                 _dc_Bus_V_uC_V
+                                 fede8054 0017(0000a3ae:.text)
+                                          0017(0000a3b2:.text)
+                 _dc_Bus_I_Cnt
+                                 fede8058 0017(0000a3f2:.text)
+                                          0017(0000a3f6:.text)
+                                          0019(0000ab3a:.text)
+                                          0019(0000ab3e:.text)
+                 _dc_Bus_I
+                                 fede805c 0017(0000a41a:.text)
+                                          0017(0000a41e:.text)
+                 _dc_Bus_I_uC_V
+                                 fede8060 0017(0000a402:.text)
+                                          0017(0000a406:.text)
+                 _dc_Bus_I_CAL
+                                 fede8064 0017(0000a40e:.text)
+                                          0017(0000a412:.text)
+                 _ac_R_Ph_V_Cnt
+                                 fede8068 0017(0000a184:.text)
+                                          0017(0000a188:.text)
+                                          0019(0000ab62:.text)
+                                          0019(0000ab66:.text)
+                 _ac_Y_Ph_V_Cnt
+                                 fede806a 0017(0000a1e4:.text)
+                                          0017(0000a1e8:.text)
+                                          0019(0000ab88:.text)
+                                          0019(0000ab8c:.text)
+                 _ac_B_Ph_V_Cnt
+                                 fede806c 0017(0000a232:.text)
+                                          0017(0000a236:.text)
+                                          0019(0000abae:.text)
+                                          0019(0000abb2:.text)
+                 _ac_R_Ph_V_uC_V
+                                 fede8070 0017(0000a196:.text)
+                                          0017(0000a19a:.text)
+                 _ac_Y_Ph_V_uC_V
+                                 fede8074 0017(0000a1f2:.text)
+                                          0017(0000a1f6:.text)
+                 _ac_B_Ph_V_uC_V
+                                 fede8078 0017(0000a240:.text)
+                                          0017(0000a244:.text)
+                 _ac_R_Ph_V
+                                 fede807c 0017(0000a1a8:.text)
+                                          0017(0000a1ac:.text)
+                 _ac_Y_Ph_V
+                                 fede8080 0017(0000a1fe:.text)
+                                          0017(0000a202:.text)
+                 _ac_B_Ph_V
+                                 fede8084 0017(0000a24c:.text)
+                                          0017(0000a250:.text)
+                 _ac_R_Ph_V_RMS
+                                 fede8088
+                 _ac_Y_Ph_V_RMS
+                                 fede808c
+                 _ac_B_Ph_V_RMS
+                                 fede8090
+                 _ac_R_Ph_I_Cnt
+                                 fede8094 0017(0000a280:.text)
+                                          0017(0000a284:.text)
+                                          0019(0000aac2:.text)
+                                          0019(0000aac6:.text)
+                 _ac_Y_Ph_I_Cnt
+                                 fede8096 0017(0000a2e8:.text)
+                                          0017(0000a2ec:.text)
+                                          0019(0000aaea:.text)
+                                          0019(0000aaee:.text)
+                 _ac_B_Ph_I_Cnt
+                                 fede8098 0017(0000a344:.text)
+                                          0017(0000a348:.text)
+                                          0019(0000ab12:.text)
+                                          0019(0000ab16:.text)
+                 _ac_R_Ph_I_uC_V
+                                 fede809c 0017(0000a290:.text)
+                                          0017(0000a294:.text)
+                 _ac_Y_Ph_I_uC_V
+                                 fede80a0 0017(0000a2f8:.text)
+                                          0017(0000a2fc:.text)
+                 _ac_B_Ph_I_uC_V
+                                 fede80a4 0017(0000a354:.text)
+                                          0017(0000a358:.text)
+                 _ac_R_Ph_I_CAL
+                                 fede80a8 0017(0000a2a0:.text)
+                                          0017(0000a2a4:.text)
+                 _ac_Y_Ph_I_CAL
+                                 fede80ac 0017(0000a304:.text)
+                                          0017(0000a308:.text)
+                 _ac_B_Ph_I_CAL
+                                 fede80b0 0017(0000a360:.text)
+                                          0017(0000a364:.text)
+                 _ac_R_Ph_I
+                                 fede80b4 0017(0000a2b0:.text)
+                                          0017(0000a2b4:.text)
+                 _ac_Y_Ph_I
+                                 fede80b8 0017(0000a310:.text)
+                                          0017(0000a314:.text)
+                 _ac_B_Ph_I
+                                 fede80bc 0017(0000a36c:.text)
+                                          0017(0000a370:.text)
+                 _ac_R_Ph_I_RMS
+                                 fede80c0
+                 _ac_Y_Ph_I_RMS
+                                 fede80c4
+                 _ac_B_Ph_I_RMS
+                                 fede80c8
+                 _inv_Input_Power
+                                 fede80cc
+                 _inv_Output_Power
+                                 fede80d0
+                 _inv_Efficiency
+                                 fede80d4
+                 _inv_R_Ph_Temp_Cnt
+                                 fede80d8 0017(0000a5a6:.text)
+                                          0017(0000a5aa:.text)
+                                          0019(0000ac72:.text)
+                                          0019(0000ac76:.text)
+                                          0019(0000af7e:.text)
+                                          0019(0000af82:.text)
+                 _inv_Y_Ph_Temp_Cnt
+                                 fede80da 0017(0000a5b2:.text)
+                                          0017(0000a5b6:.text)
+                                          0019(0000ac9a:.text)
+                                          0019(0000ac9e:.text)
+                                          0019(0000af8c:.text)
+                                          0019(0000af90:.text)
+                 _inv_B_Ph_Temp_Cnt
+                                 fede80dc 0017(0000a5be:.text)
+                                          0017(0000a5c2:.text)
+                                          0019(0000acc2:.text)
+                                          0019(0000acc6:.text)
+                                          0019(0000af9a:.text)
+                                          0019(0000af9e:.text)
+                 _int_R_Ph_Temp
+                                 fede80e0
+                 _int_Y_Ph_Temp
+                                 fede80e4
+                 _int_B_Ph_Temp
+                                 fede80e8
+                 _motor_Temp_Cnt
+                                 fede80ec 0017(0000a59a:.text)
+                                          0017(0000a59e:.text)
+                                          0019(0000ac4a:.text)
+                                          0019(0000ac4e:.text)
+                                          0019(0000af68:.text)
+                                          0019(0000af6c:.text)
+                 _motor_Temp
+                                 fede80f0
+                 _motor_Temp_uC_V
+                                 fede80f4
+                 _tps1_Cnt
+                                 fede80f8 0017(0000a452:.text)
+                                          0017(0000a456:.text)
+                                          0019(0000abfa:.text)
+                                          0019(0000abfe:.text)
+                 _tps1_uC_V
+                                 fede80fc 0017(0000a462:.text)
+                                          0017(0000a466:.text)
+                 _tps1_V
+                                 fede8100 0017(0000a46a:.text)
+                                          0017(0000a46e:.text)
+                 _tps2_Cnt
+                                 fede8104 0017(0000a4a6:.text)
+                                          0017(0000a4aa:.text)
+                                          0019(0000ac22:.text)
+                                          0019(0000ac26:.text)
+                 _tps2_uC_V
+                                 fede8108 0017(0000a4b6:.text)
+                                          0017(0000a4ba:.text)
+                 _tps2_V
+                                 fede810c 0017(0000a4be:.text)
+                                          0017(0000a4c2:.text)
+                 _df_Cof_AC_I
+                                 fede8110 0017(0000a2b8:.text)
+                                          0017(0000a2bc:.text)
+                                          0017(0000a318:.text)
+                                          0017(0000a374:.text)
+                 _perivious_AC_R_Ph_I_DF
+                                 fede8114 0017(0000a2c8:.text)
+                                          0017(0000a2cc:.text)
+                                          0017(0000a2e0:.text)
+                 _perivious_AC_Y_Ph_I_DF
+                                 fede8118 0017(0000a324:.text)
+                                          0017(0000a328:.text)
+                                          0017(0000a33c:.text)
+                 _perivious_AC_B_Ph_I_DF
+                                 fede811c 0017(0000a380:.text)
+                                          0017(0000a384:.text)
+                                          0017(0000a398:.text)
+                 _act_AC_R_Ph_I
+                                 fede8120 0017(0000a2d8:.text)
+                                          0017(0000a2dc:.text)
+                                          0019(0000ae58:.text)
+                                          0019(0000ae5c:.text)
+                                          0019(0000ae6c:.text)
+                                          0019(0000ae70:.text)
+                                          0019(0000aea6:.text)
+                                          0019(0000aeaa:.text)
+                                          0019(0000aeba:.text)
+                                          0019(0000aebe:.text)
+                 _act_AC_Y_Ph_I
+                                 fede8124 0017(0000a334:.text)
+                                          0017(0000a338:.text)
+                                          0019(0000ae86:.text)
+                                          0019(0000ae8a:.text)
+                                          0019(0000aed4:.text)
+                                          0019(0000aed8:.text)
+                 _act_AC_B_Ph_I
+                                 fede8128 0017(0000a390:.text)
+                                          0017(0000a394:.text)
+                 _df_Cof_AC_V
+                                 fede812c 0017(0000a1b0:.text)
+                                          0017(0000a1b4:.text)
+                                          0017(0000a206:.text)
+                                          0017(0000a254:.text)
+                                          0017(0000a3c2:.text)
+                 _perivious_AC_R_Ph_V_DF
+                                 fede8130 0017(0000a1c4:.text)
+                                          0017(0000a1c8:.text)
+                                          0017(0000a1dc:.text)
+                 _perivious_AC_Y_Ph_V_DF
+                                 fede8134 0017(0000a212:.text)
+                                          0017(0000a216:.text)
+                                          0017(0000a22a:.text)
+                 _perivious_AC_B_Ph_V_DF
+                                 fede8138 0017(0000a260:.text)
+                                          0017(0000a264:.text)
+                                          0017(0000a278:.text)
+                 _act_AC_R_Ph_V
+                                 fede813c 0017(0000a1d4:.text)
+                                          0017(0000a1d8:.text)
+                                          0017(0000a3e6:.text)
+                 _act_AC_Y_Ph_V
+                                 fede8140 0017(0000a222:.text)
+                                          0017(0000a226:.text)
+                 _act_AC_B_Ph_V
+                                 fede8144 0017(0000a270:.text)
+                                          0017(0000a274:.text)
+                 _df_Cof_DC_I
+                                 fede8148 0017(0000a422:.text)
+                                          0017(0000a426:.text)
+                                          0017(0000a47e:.text)
+                                          0017(0000a4ce:.text)
+                                          0017(0000a522:.text)
+                                          0017(0000a572:.text)
+                 _perivious_DC_Bus_I_DF
+                                 fede814c 0017(0000a432:.text)
+                                          0017(0000a436:.text)
+                                          0017(0000a44a:.text)
+                 _act_DC_Bus_I
+                                 fede8150 0017(0000a442:.text)
+                                          0017(0000a446:.text)
+                                          0019(0000aef4:.text)
+                                          0019(0000aef8:.text)
+                                          0019(0000af14:.text)
+                                          0019(0000af30:.text)
+                                          0019(0000af4c:.text)
+                 _df_Cof_DC_V
+                                 fede8154
+                 _perivious_DC_Bus_V_DF
+                                 fede8158 0017(0000a3ce:.text)
+                                          0017(0000a3d2:.text)
+                                          0017(0000a3ea:.text)
+                 _act_DC_Bus_V
+                                 fede815c 0017(0000a3de:.text)
+                                          0017(0000a3e2:.text)
+                 _df_Cof_TPS
+                                 fede8160 0017(0000a472:.text)
+                                          0017(0000a476:.text)
+                                          0017(0000a4c6:.text)
+                 _perivious_TPS1_V_DF
+                                 fede8164 0017(0000a486:.text)
+                                          0017(0000a48a:.text)
+                                          0017(0000a49e:.text)
+                 _act_TPS1_V
+                                 fede8168 0017(0000a496:.text)
+                                          0017(0000a49a:.text)
+                 _perivious_TPS2_V_DF
+                                 fede816c 0017(0000a4d6:.text)
+                                          0017(0000a4da:.text)
+                                          0017(0000a4ee:.text)
+                 _act_TPS2_V
+                                 fede8170 0017(0000a4e6:.text)
+                                          0017(0000a4ea:.text)
+                 _df_Cof_PS
+                                 fede8174 0017(0000a516:.text)
+                                          0017(0000a51a:.text)
+                                          0017(0000a56a:.text)
+                 _perivious_Mon_5V_DF
+                                 fede8178 0017(0000a52a:.text)
+                                          0017(0000a52e:.text)
+                                          0017(0000a542:.text)
+                 _act_5V
+                                 fede817c 0017(0000a53a:.text)
+                                          0017(0000a53e:.text)
+                 _perivious_Mon_A_5V_DF
+                                 fede8180 0017(0000a57a:.text)
+                                          0017(0000a57e:.text)
+                                          0017(0000a592:.text)
+                 _act_A_5V
+                                 fede8184 0017(0000a58a:.text)
+                                          0017(0000a58e:.text)
+                 _i_AC_R_Ph_CAL
+                                 fede8188
+     SECTION=.data
+0018 Trapezoidal_Mode
+     SECTION=.text
+                 _Hall_Read
+                                 0000a5c6 0018(0000a607:.text)
+                                          0021(0000afc1:.text)
+                 _Sector_Estimation
+                                 0000a602 0021(0000afc5:.text)
+                 _Deg_Estimation
+                                 0000a736 0021(0000afc9:.text)
+                 _Speed_Estimation
+                                 0000a7e4 0021(0000afcd:.text)
+                 _Ele_Deg_Estimation
+                                 0000a970 0021(0000afd1:.text)
+                 _Trapezoidal_Patern
+                                 0000a9fa 0018(0000aaa5:.text)
+                 _Trapezoidal_MODE
+                                 0000aaa0 0021(0000b095:.text)
+     SECTION=.data.R
+                 _tpz_Duty
+                                 fede818c 0018(0000aaaa:.text)
+                                          0018(0000aaae:.text)
+                                          0021(0000b072:.text)
+                                          0021(0000b076:.text)
+                 _sector
+                                 fede818e 0018(0000a630:.text)
+                                          0018(0000a636:.text)
+                                          0018(0000a662:.text)
+                                          0018(0000a668:.text)
+                                          0018(0000a694:.text)
+                                          0018(0000a69a:.text)
+                                          0018(0000a6c6:.text)
+                                          0018(0000a6cc:.text)
+                                          0018(0000a6f8:.text)
+                                          0018(0000a6fe:.text)
+                                          0018(0000a72a:.text)
+                                          0018(0000a730:.text)
+                                          0018(0000a744:.text)
+                                          0018(0000a747:.text)
+                                          0018(0000a776:.text)
+                                          0018(0000a779:.text)
+                                          0018(0000a800:.text)
+                                          0018(0000a803:.text)
+                                          0018(0000a818:.text)
+                                          0018(0000a81b:.text)
+                                          0018(0000a90e:.text)
+                                          0018(0000a911:.text)
+                                          0018(0000a922:.text)
+                                          0018(0000a926:.text)
+                                          0018(0000aa08:.text)
+                                          0018(0000aa0b:.text)
+                                          0018(0000aa2e:.text)
+                                          0018(0000aa31:.text)
+                                          0021(0000aff4:.text)
+                                          0021(0000aff7:.text)
+                                          0021(0000b018:.text)
+                                          0021(0000b01b:.text)
+                                          0021(0000b042:.text)
+                                          0021(0000b046:.text)
+                 _hall_A
+                                 fede818f 0018(0000a5d6:.text)
+                                          0018(0000a5da:.text)
+                                          0018(0000a60c:.text)
+                                          0018(0000a60f:.text)
+                                          0018(0000a63e:.text)
+                                          0018(0000a641:.text)
+                                          0018(0000a670:.text)
+                                          0018(0000a673:.text)
+                                          0018(0000a6a2:.text)
+                                          0018(0000a6a5:.text)
+                                          0018(0000a6d4:.text)
+                                          0018(0000a6d7:.text)
+                                          0018(0000a706:.text)
+                                          0018(0000a709:.text)
+                                          0019(0000acf2:.text)
+                                          0019(0000acf5:.text)
+                                          0019(0000ad1a:.text)
+                                          0019(0000ad1d:.text)
+                 _hall_B
+                                 fede8190 0018(0000a5e8:.text)
+                                          0018(0000a5ec:.text)
+                                          0018(0000a618:.text)
+                                          0018(0000a61b:.text)
+                                          0018(0000a64a:.text)
+                                          0018(0000a64d:.text)
+                                          0018(0000a67c:.text)
+                                          0018(0000a67f:.text)
+                                          0018(0000a6ae:.text)
+                                          0018(0000a6b1:.text)
+                                          0018(0000a6e0:.text)
+                                          0018(0000a6e3:.text)
+                                          0018(0000a712:.text)
+                                          0018(0000a715:.text)
+                                          0019(0000acfe:.text)
+                                          0019(0000ad01:.text)
+                                          0019(0000ad26:.text)
+                                          0019(0000ad29:.text)
+                 _hall_C
+                                 fede8191 0018(0000a5fa:.text)
+                                          0018(0000a5fe:.text)
+                                          0018(0000a624:.text)
+                                          0018(0000a627:.text)
+                                          0018(0000a656:.text)
+                                          0018(0000a659:.text)
+                                          0018(0000a688:.text)
+                                          0018(0000a68b:.text)
+                                          0018(0000a6ba:.text)
+                                          0018(0000a6bd:.text)
+                                          0018(0000a6ec:.text)
+                                          0018(0000a6ef:.text)
+                                          0018(0000a71e:.text)
+                                          0018(0000a721:.text)
+                                          0019(0000ad0a:.text)
+                                          0019(0000ad0d:.text)
+                                          0019(0000ad32:.text)
+                                          0019(0000ad35:.text)
+                 _mode_SW
+                                 fede8192
+                 _forward_REV_SW
+                                 fede8193
+                 _cruise_Cont_SW
+                                 fede8194
+                 _park_SW
+                                 fede8195
+                 _rear_Break_SW
+                                 fede8196
+                 _front_Break_SW
+                                 fede8197
+                 _side_Stand_SW
+                                 fede8198
+                 _kill_SW
+                                 fede8199
+                 _anti_Theft_Lock_Cont_SW
+                                 fede819a
+                 _gate_Deriver_Cond
+                                 fede819b 0019(0000add8:.text)
+                                          0019(0000addc:.text)
+                                          0019(0000ae28:.text)
+                                          0019(0000ae2c:.text)
+                 _sect_Deg
+                                 fede819c 0018(0000a764:.text)
+                                          0018(0000a76c:.text)
+                                          0018(0000a782:.text)
+                                          0018(0000a786:.text)
+                                          0018(0000a790:.text)
+                                          0018(0000a798:.text)
+                                          0018(0000a7a2:.text)
+                                          0018(0000a7aa:.text)
+                                          0018(0000a7b4:.text)
+                                          0018(0000a7bc:.text)
+                                          0018(0000a7c6:.text)
+                                          0018(0000a7ce:.text)
+                                          0018(0000a7d8:.text)
+                                          0018(0000a7e0:.text)
+                                          0018(0000a9a0:.text)
+                                          0018(0000a9a4:.text)
+                                          0018(0000a9e4:.text)
+                                          0018(0000a9e8:.text)
+                 _speed_Counter
+                                 fede819e 0018(0000a7e6:.text)
+                                          0018(0000a7ea:.text)
+                                          0018(0000a7f0:.text)
+                                          0018(0000a824:.text)
+                                          0018(0000a828:.text)
+                                          0018(0000a834:.text)
+                                          0018(0000a932:.text)
+                                          0018(0000a936:.text)
+                                          0018(0000a942:.text)
+                                          0018(0000a946:.text)
+                                          0018(0000a94a:.text)
+                                          0018(0000a94e:.text)
+                 _speed_Esti_Counter
+                                 fede81a0 0018(0000a82c:.text)
+                                          0018(0000a830:.text)
+                                          0018(0000a838:.text)
+                 _prev_sect
+                                 fede81a2 0018(0000a7f4:.text)
+                                          0018(0000a7f7:.text)
+                                          0018(0000a80c:.text)
+                                          0018(0000a80f:.text)
+                                          0018(0000a906:.text)
+                                          0018(0000a909:.text)
+                                          0018(0000a92a:.text)
+                                          0018(0000a92e:.text)
+                 _freq
+                                 fede81a4 0018(0000a898:.text)
+                                          0018(0000a89c:.text)
+                                          0018(0000a8b4:.text)
+                                          0018(0000a8b8:.text)
+                 _freq_Add
+                                 fede81a6 0018(0000a856:.text)
+                                          0018(0000a85a:.text)
+                                          0018(0000a874:.text)
+                                          0018(0000a8de:.text)
+                                          0018(0000a8e2:.text)
+                                          0018(0000a968:.text)
+                                          0018(0000a96c:.text)
+                 _freq_Sum
+                                 fede81a8 0018(0000a86c:.text)
+                                          0018(0000a870:.text)
+                                          0018(0000a87a:.text)
+                                          0018(0000a888:.text)
+                                          0018(0000a88c:.text)
+                                          0018(0000a8a0:.text)
+                 _freq_Sum_Cnt
+                                 fede81ac 0018(0000a85e:.text)
+                                          0018(0000a862:.text)
+                                          0018(0000a868:.text)
+                                          0018(0000a87d:.text)
+                                          0018(0000a8a4:.text)
+                                          0018(0000a8a8:.text)
+                 _speed_RPM
+                                 fede81ae 0018(0000a8d6:.text)
+                                          0018(0000a8da:.text)
+                                          0018(0000a958:.text)
+                                          0018(0000a95c:.text)
+                 _delta_Theta
+                                 fede81b0 0018(0000a8fe:.text)
+                                          0018(0000a902:.text)
+                                          0018(0000a986:.text)
+                                          0018(0000a98a:.text)
+                                          0018(0000a9ca:.text)
+                                          0018(0000a9ce:.text)
+                 _delta_Theta_cnt
+                                 fede81b4 0018(0000a91a:.text)
+                                          0018(0000a91e:.text)
+                                          0018(0000a97e:.text)
+                                          0018(0000a982:.text)
+                                          0018(0000a992:.text)
+                                          0018(0000a9c2:.text)
+                                          0018(0000a9c6:.text)
+                                          0018(0000a9d6:.text)
+                 _ele_Theta
+                                 fede81b8 0018(0000a960:.text)
+                                          0018(0000a964:.text)
+                                          0018(0000a9b4:.text)
+                                          0018(0000a9b8:.text)
+                                          0022(0000b2ac:.text)
+                                          0022(0000b2af:.text)
+                                          0022(0000b2c4:.text)
+                 _no_of_Pole_pair
+                                 fede81b9 0018(0000a8ac:.text)
+                                          0018(0000a8af:.text)
+                 _mot_Forward
+                                 fede81ba 0018(0000a738:.text)
+                                          0018(0000a73b:.text)
+                                          0018(0000a972:.text)
+                                          0018(0000a975:.text)
+                                          0018(0000a9fc:.text)
+                                          0018(0000a9ff:.text)
+                                          0022(0000b0c2:.text)
+                                          0022(0000b0c5:.text)
+     SECTION=.data
+0019 Fault_Analysis
+     SECTION=.text
+                 _Sensor_Health_Check
+                                 0000aabc
+                 _Sensor_Run_Time_Moni
+                                 0000acf0 0019(0000ace9:.text)
+                 _Hardware_Fault_Moni
+                                 0000adb4
+                 _Software_Fault_Monitor
+                                 0000ae56
+     SECTION=.data.R
+                 _pGood_15V
+                                 fede81bc 0019(0000ad98:.text)
+                                          0019(0000ad9b:.text)
+                 _shoot_Through_Fault
+                                 fede81bd 0019(0000adc2:.text)
+                                          0019(0000adc6:.text)
+                                          0019(0000adf2:.text)
+                                          0019(0000adf5:.text)
+                 _ocp_Fault
+                                 fede81be 0019(0000ae12:.text)
+                                          0019(0000ae16:.text)
+                                          0019(0000ae42:.text)
+                                          0019(0000ae45:.text)
+                 _fault_Hall_Sens
+                                 fede81bf 0019(0000ad40:.text)
+                                          0019(0000ad44:.text)
+                 _fault_I_AC_R_Sens
+                                 fede81c0 0019(0000aae2:.text)
+                                          0019(0000aae6:.text)
+                 _fault_I_AC_Y_Sens
+                                 fede81c1 0019(0000ab0a:.text)
+                                          0019(0000ab0e:.text)
+                 _fault_I_AC_B_Sens
+                                 fede81c2 0019(0000ab32:.text)
+                                          0019(0000ab36:.text)
+                 _fault_I_DC_Sens
+                                 fede81c3 0019(0000ab5a:.text)
+                                          0019(0000ab5e:.text)
+                 _fault_V_AC_R_Sens
+                                 fede81c4 0019(0000ab80:.text)
+                                          0019(0000ab84:.text)
+                 _fault_V_AC_Y_Sens
+                                 fede81c5 0019(0000aba6:.text)
+                                          0019(0000abaa:.text)
+                 _fault_V_AC_B_Sens
+                                 fede81c6 0019(0000abcc:.text)
+                                          0019(0000abd0:.text)
+                 _fault_V_DC_Sens
+                                 fede81c7 0019(0000abf2:.text)
+                                          0019(0000abf6:.text)
+                 _fault_Throttel_1_Sens
+                                 fede81c8 0019(0000ac1a:.text)
+                                          0019(0000ac1e:.text)
+                 _fault_Throttel_2_Sens
+                                 fede81c9 0019(0000ac42:.text)
+                                          0019(0000ac46:.text)
+                 _fault_Mot_Tem_Sens
+                                 fede81ca 0019(0000ac6a:.text)
+                                          0019(0000ac6e:.text)
+                 _inverter_Tem_NTC_R_Sens
+                                 fede81cb 0019(0000ac92:.text)
+                                          0019(0000ac96:.text)
+                 _inverter_Tem_NTC_Y_Sens
+                                 fede81cc 0019(0000acba:.text)
+                                          0019(0000acbe:.text)
+                 _inverter_Tem_NTC_B_Sens
+                                 fede81cd 0019(0000ace2:.text)
+                                          0019(0000ace6:.text)
+                 _mon_Aux_5V_Measure
+                                 fede81ce 0019(0000ad68:.text)
+                                          0019(0000ad6c:.text)
+                 _mon_Aux_A_5V_Measure
+                                 fede81cf 0019(0000ad90:.text)
+                                          0019(0000ad94:.text)
+                 _pGood_15V_Monitor
+                                 fede81d0 0019(0000ada2:.text)
+                                          0019(0000adaa:.text)
+                                          0019(0000adb0:.text)
+                 _shoot_Through_Fault_Detect
+                                 fede81d1 0019(0000adce:.text)
+                                          0019(0000add4:.text)
+                                          0019(0000adfe:.text)
+                                          0019(0000ae02:.text)
+                 _ocp_Fault_Detect
+                                 fede81d2 0019(0000ae1e:.text)
+                                          0019(0000ae24:.text)
+                                          0019(0000ae4e:.text)
+                                          0019(0000ae52:.text)
+                 _fault_Phase_OC
+                                 fede81d3 0019(0000ae9e:.text)
+                                          0019(0000aea2:.text)
+                 _fault_Phase_SC
+                                 fede81d4 0019(0000aeec:.text)
+                                          0019(0000aef0:.text)
+                 _fault_DC_BUS_OC
+                                 fede81d5 0019(0000af0c:.text)
+                                          0019(0000af10:.text)
+                 _fault_DC_BUS_SC
+                                 fede81d6 0019(0000af28:.text)
+                                          0019(0000af2c:.text)
+                 _fault_DC_BUS_OV
+                                 fede81d7 0019(0000af44:.text)
+                                          0019(0000af48:.text)
+                 _fault_DC_BUS_UV
+                                 fede81d8 0019(0000af60:.text)
+                                          0019(0000af64:.text)
+                 _fault_MOT_OT
+                                 fede81d9 0019(0000af76:.text)
+                                          0019(0000af7a:.text)
+                 _fault_INV_OT
+                                 fede81da 0019(0000afa8:.text)
+                                          0019(0000afae:.text)
+                                          0019(0000afb4:.text)
+                                          0019(0000afb8:.text)
+     SECTION=.data
+0020 Register_Interface
+0021 Motor_Control
+     SECTION=.text
+                 _Motor_Run_Mode_Select
+                                 0000afbc
+     SECTION=.data.R
+                 _PWM_MODE_Switch
+                                 fede81dc 0021(0000b010:.text)
+                                          0021(0000b014:.text)
+                                          0021(0000b068:.text)
+                                          0021(0000b06e:.text)
+                                          0021(0000b08a:.text)
+                                          0021(0000b08d:.text)
+                 _soft_start_delay
+                                 fede81dd
+                 _sect_Cycle_Cnt
+                                 fede81de 0021(0000b008:.text)
+                                          0021(0000b00c:.text)
+                                          0021(0000b02c:.text)
+                                          0021(0000b030:.text)
+                                          0021(0000b036:.text)
+                                          0021(0000b052:.text)
+                                          0021(0000b056:.text)
+                                          0021(0000b05e:.text)
+                                          0021(0000b064:.text)
+                 _sect_Cycle_CLR_Delay_Cnt
+                                 fede81e0 0021(0000afd6:.text)
+                                          0021(0000afda:.text)
+                                          0021(0000afe0:.text)
+                                          0021(0000afec:.text)
+                                          0021(0000aff0:.text)
+                                          0021(0000b03a:.text)
+                                          0021(0000b03e:.text)
+                 _pre_Mode_Chang_sector
+                                 fede81e2 0021(0000affc:.text)
+                                          0021(0000afff:.text)
+                                          0021(0000b020:.text)
+                                          0021(0000b023:.text)
+                                          0021(0000b04a:.text)
+                                          0021(0000b04e:.text)
+                 _throttle_Read
+                                 fede81e4
+     SECTION=.data
+0022 Sinusoidal_Mode
+     SECTION=.const
+                 _Table
+                                 00008000 0022(0000b150:.text)
+     SECTION=.text
+                 _Sinusoidal_MODE
+                                 0000b0bc 0021(0000b0b5:.text)
+                 _Angle_Conversion
+                                 0000b2aa 0022(0000b0e3:.text)
+     SECTION=.data.R
+                 _theta1
+                                 fede81e8 0022(0000b0e8:.text)
+                                          0022(0000b0ec:.text)
+                                          0022(0000b2dc:.text)
+                                          0022(0000b2e0:.text)
+                                          0022(0000b2ec:.text)
+                                          0022(0000b2f0:.text)
+                                          0022(0000b2fc:.text)
+                 _OFFSET_THE
+                                 fede81ec 0022(0000b0dc:.text)
+                                          0022(0000b0e0:.text)
+                                          0022(0000b0f0:.text)
+                                          0022(0000b0f3:.text)
+                 _rotor_Theta
+                                 fede81f0 0022(0000b11e:.text)
+                                          0022(0000b122:.text)
+                                          0022(0000b144:.text)
+                 _rotor_Theta1
+                                 fede81f4 0022(0000b13c:.text)
+                                          0022(0000b140:.text)
+                                          0022(0000b164:.text)
+                 _sine_Theta
+                                 fede81f8 0022(0000b15c:.text)
+                                          0022(0000b160:.text)
+                                          0022(0000b1e0:.text)
+                                          0022(0000b1e4:.text)
+                                          0022(0000b208:.text)
+                 _cose_Theta
+                                 fede81fc 0022(0000b172:.text)
+                                          0022(0000b176:.text)
+                                          0022(0000b1d0:.text)
+                                          0022(0000b1d4:.text)
+                                          0022(0000b1fc:.text)
+                 _v_q
+                                 fede8200 0022(0000b17a:.text)
+                                          0022(0000b17e:.text)
+                                          0022(0000b188:.text)
+                                          0022(0000b190:.text)
+                                          0022(0000b194:.text)
+                                          0022(0000b198:.text)
+                                          0022(0000b1a0:.text)
+                                          0022(0000b1a4:.text)
+                                          0022(0000b1b0:.text)
+                                          0022(0000b1b4:.text)
+                                          0022(0000b1dc:.text)
+                                          0022(0000b1f8:.text)
+                 _v_d
+                                 fede8202 0022(0000b1c6:.text)
+                                          0022(0000b1ca:.text)
+                                          0022(0000b204:.text)
+                 _v_Alpha
+                                 fede8204 0022(0000b1f0:.text)
+                                          0022(0000b1f4:.text)
+                                          0022(0000b21c:.text)
+                                          0022(0000b228:.text)
+                                          0022(0000b24c:.text)
+                 _v_Beta
+                                 fede8208 0022(0000b214:.text)
+                                          0022(0000b218:.text)
+                                          0022(0000b230:.text)
+                                          0022(0000b252:.text)
+                 _va
+                                 fede820c 0022(0000b220:.text)
+                                          0022(0000b224:.text)
+                                          0022(0000b268:.text)
+                 _vb
+                                 fede8210 0022(0000b244:.text)
+                                          0022(0000b248:.text)
+                                          0022(0000b278:.text)
+                 _vc
+                                 fede8214 0022(0000b260:.text)
+                                          0022(0000b264:.text)
+                                          0022(0000b288:.text)
+                 _sin_Duty_U
+                                 fede8218 0022(0000b270:.text)
+                                          0022(0000b274:.text)
+                                          0022(0000b2a0:.text)
+                 _sin_Duty_V
+                                 fede821a 0022(0000b280:.text)
+                                          0022(0000b284:.text)
+                                          0022(0000b29c:.text)
+                 _sin_Duty_W
+                                 fede821c 0022(0000b290:.text)
+                                          0022(0000b294:.text)
+                                          0022(0000b298:.text)
+                 _vd_ratio
+                                 fede8220 0022(0000b1a8:.text)
+                                          0022(0000b1ac:.text)
+     SECTION=.data
+0023 initsct_rh
+     SECTION=.text
+                 __INITSCT_RH
+                                 0000b300 0002(000084da:.text)
+0024 rlink_generates_01
+     SECTION=
+                 __gp_data
+                                 00000000 0002(000084b6:.text)
+                 __ep_data
+                                 00000000 0002(000084bc:.text)
+0025 rlink_generates_02
+     SECTION=
+                 __sRESET
+                                 00000000
+                 __SRESET
+                                 00000000
+                 __eRESET
+                                 000001f8
+                 __ERESET
+                                 000001f8
+                 __sEIINTTBL.const
+                                 00000200 0001(00008464:.text)
+                 __SEIINTTBL_const
+                                 00000200
+                 __eEIINTTBL.const
+                                 00000798
+                 __EEIINTTBL_const
+                                 00000798
+                 __s.const
+                                 00008000
+                 __S_const
+                                 00008000
+                 __e.const
+                                 00008400
+                 __E_const
+                                 00008400
+                 __s.INIT_DSEC.const
+                                 00008400 0002(000084c2:.text)
+                 __S_INIT_DSEC_const
+                                 00008400
+                 __e.INIT_DSEC.const
+                                 0000840c 0002(000084c8:.text)
+                 __E_INIT_DSEC_const
+                                 0000840c
+                 __s.INIT_BSEC.const
+                                 0000840c 0002(000084ce:.text)
+                 __S_INIT_BSEC_const
+                                 0000840c
+                 __s.text
+                                 00008414
+                 __S_text
+                                 00008414
+                 __e.INIT_BSEC.const
+                                 00008414 0002(000084d4:.text)
+                 __E_INIT_BSEC_const
+                                 00008414
+                 __e.text
+                                 0000b3b0
+                 __E_text
+                                 0000b3b0
+                 __s.data
+                                 0000b3b0 0002(00008400:.INIT_DSEC.const)
+                 __S_data
+                                 0000b3b0
+                 __e.data
+                                 0000b5d4 0002(00008404:.INIT_DSEC.const)
+                 __E_data
+                                 0000b5d4
+                 __s.data.R
+                                 fede8000 0002(00008408:.INIT_DSEC.const)
+                 __S_data_R
+                                 fede8000
+                 __e.data.R
+                                 fede8224
+                 __E_data_R
+                                 fede8224
+                 __s.bss
+                                 fede8224 0002(0000840c:.INIT_BSEC.const)
+                 __S_bss
+                                 fede8224
+                 __e.bss
+                                 fede8238 0002(00008410:.INIT_BSEC.const)
+                 __E_bss
+                                 fede8238
+                 __s.stack.bss
+                                 fede8238
+                 __S_stack_bss
+                                 fede8238
+                 __e.stack.bss
+                                 fede8438
+                 __E_stack_bss
+                                 fede8438
