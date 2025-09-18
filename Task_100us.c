@@ -142,7 +142,7 @@ void Task_100micro(void)
 	     Temp_Cal();
 	    //Power_Torque_Calculation(SpeedParams.speed_measured_rpm);
 	    //Clarke and park for current:
-		
+
 	    clarke_transform(iA_filteredCnt,iB_filteredCnt, &Clarke_AlphaBeta.Ialpha, &Clarke_AlphaBeta.Ibeta);
 	    
 	    park_transform(Clarke_AlphaBeta.Ialpha,Clarke_AlphaBeta.Ibeta,OpenLpParam.sin_theta,OpenLpParam.cos_theta,&Curnt_Controls.iQ,&Curnt_Controls.iD);
