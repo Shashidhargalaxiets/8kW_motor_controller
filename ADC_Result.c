@@ -263,7 +263,7 @@ void Analog_Read(void)
         per_DC_Bus_I_DF = dc_Bus_I;
         per_TPS1_V_DF = (float)tps1_V_Cnt;
 	
-	theta_radian = (float)(atan2(Sine_signed_value1, Cos_signed_value1));
+	theta_radian = (float)(atan2(Sine_signed_value1, Cos_signed_value1)); // theta calculation in radian
 	Rotar_ThetaRadian = theta_radian;
 	theta_in_degree = (theta_radian * 57.32);
 	if(theta_in_degree < 0)
