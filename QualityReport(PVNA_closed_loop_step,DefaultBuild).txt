@@ -1,30 +1,194 @@
 QualityReport
-Monday, August 25, 2025 5:39:45 PM
+18 September 2025 17:17:56
 
 ------ Start build(PVNA_closed_loop_step, DefaultBuild) ------
------- Build ended(Error:0, Warning:0)(PVNA_closed_loop_step, DefaultBuild) ------
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Config_PORT.c -oDefaultBuild\Config_PORT.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe PWM.c -oDefaultBuild\PWM.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe main.c -oDefaultBuild\main.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Speed.c -oDefaultBuild\Speed.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe voltage_limiter.c -oDefaultBuild\voltage_limiter.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Svpwm.c -oDefaultBuild\Svpwm.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe ShortCircuitFault_Monitor.c -oDefaultBuild\ShortCircuitFault_Monitor.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe DummyInt.c -oDefaultBuild\DummyInt.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Clarke.c -oDefaultBuild\Clarke.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe OpenLoop.c -oDefaultBuild\OpenLoop.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Digital_Input_Read.c -oDefaultBuild\Digital_Input_Read.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Torque_calculation.c -oDefaultBuild\Torque_calculation.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Stall_Protection.c -oDefaultBuild\Stall_Protection.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Park.c -oDefaultBuild\Park.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Speed_PI.c -oDefaultBuild\Speed_PI.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Torque.c -oDefaultBuild\Torque.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe AngleConversion.c -oDefaultBuild\AngleConversion.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Config_ADC.c -oDefaultBuild\Config_ADC.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe MTPA.c -oDefaultBuild\MTPA.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+Task_100us.h(8):W0521649:White space is required between the macro name "resistance6" and its replacement text
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Motor_Protection.c -oDefaultBuild\Motor_Protection.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Systeminit.c -oDefaultBuild\Systeminit.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+Torque_calculation.c(17):W0520147:Declaration is incompatible with "void Power_Torque_Calculation(void)" (declared at line 10 of "Torque_calculation.h")
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Temperature_calculation.c -oDefaultBuild\Temperature_calculation.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Task_100us.c -oDefaultBuild\Task_100us.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Flux.c -oDefaultBuild\Flux.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Ramp.c -oDefaultBuild\Ramp.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Sensor_health.c -oDefaultBuild\Sensor_health.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+Task_100us.h(8):W0521649:White space is required between the macro name "resistance6" and its replacement text
+Motor_Protection.c(63):W0520177:Variable "aPH_Open_DB_Cnt" was declared but never referenced
+Motor_Protection.c(64):W0520177:Variable "bPH_Open_DB_Cnt" was declared but never referenced
+Motor_Protection.c(65):W0520177:Variable "cPH_Open_DB_Cnt" was declared but never referenced
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe FaultCheck_Functions.c -oDefaultBuild\FaultCheck_Functions.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Resolver.c -oDefaultBuild\Resolver.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe ADC_Result.c -oDefaultBuild\ADC_Result.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Throttle_mapping.c -oDefaultBuild\Throttle_mapping.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe InversePark.c -oDefaultBuild\InversePark.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe cstart.asm -oDefaultBuild\cstart.obj -Xcpu=g3kh -g -c -Xmsg_lang=english
+ADC_Result.c(160):W0520177:Variable "iA_" was declared but never referenced
+ADC_Result.c(161):W0520177:Variable "iB_" was declared but never referenced
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Config_PWM.c -oDefaultBuild\Config_PWM.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe boot.asm -oDefaultBuild\boot.obj -Xcpu=g3kh -g -c -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Config_OSTM.c -oDefaultBuild\Config_OSTM.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+Task_100us.h(8):W0521649:White space is required between the macro name "resistance6" and its replacement text
+Task_100us.c(128):W0520167:Argument of type "volatile unsigned short *" is incompatible with parameter of type "uint32_t *"
+Task_100us.c(322):W0520167:Argument of type "volatile unsigned short *" is incompatible with parameter of type "uint32_t *"
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+Task_100us.h(8):W0521649:White space is required between the macro name "resistance6" and its replacement text
+Task_100us.h(14):W0520047:Incompatible redefinition of macro "RAMP_UP_DELAY" (declared at line 36 of "Motor_Control.h")
+Task_100us.h(15):W0520047:Incompatible redefinition of macro "RAMP_DOWN_DELAY" (declared at line 37 of "Motor_Control.h")
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Config_CGC.c -oDefaultBuild\Config_CGC.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe InverseClarke.c -oDefaultBuild\InverseClarke.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+Task_100us.h(8):W0521649:White space is required between the macro name "resistance6" and its replacement text
+Sensor_health.c(102):W0520187:Use of "=" where "==" may have been intended
+FaultCheck_Functions.c(4):W0520147:Declaration is incompatible with "uint8_t Fault_Check(int, int16_t, int16_t)" (declared at line 7 of "FaultCheck_Functions.h")
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe SensorRunTime_Monitor.c -oDefaultBuild\SensorRunTime_Monitor.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe intvector.c -oDefaultBuild\intvector.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe Register_Interface.c -oDefaultBuild\Register_Interface.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+Task_100us.h(8):W0521649:White space is required between the macro name "resistance6" and its replacement text
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe DigitalFilter.c -oDefaultBuild\DigitalFilter.obj -Xcpu=g3kh -g -g_line "-IC:\Users\Naveen Kumar P\Downloads" -I. -Xdbl_size=4 -c -Xmsg_lang=english
+W0511106:The folder "C:\Users\Naveen Kumar P\Downloads" specified by the "-I" option is not found.
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\rlink.exe -subcommand=DefaultBuild\PVNA_closed_loop_step.clnk
+W0561016:The evaluation version of CC-RH V2 is valid for the remaining 12 days. After that, link size limit (256 Kbyte) will be applied. Please consider purchasing the product.
+W0561016:The evaluation version of CC-RH V2 is valid for the remaining 12 days. After that, link size limit (256 Kbyte) will be applied. Please consider purchasing the product.
+Renesas Optimizing Linker Completed
+------ Build ended(Error:0, Warning:59)(PVNA_closed_loop_step, DefaultBuild) ------
+
+--- CommandFile 1 ---
+DefaultBuild\PVNA_closed_loop_step.clnk :
+-input=DefaultBuild\boot.obj
+-input=DefaultBuild\cstart.obj
+-input=DefaultBuild\main.obj
+-input=DefaultBuild\Config_CGC.obj
+-input=DefaultBuild\Systeminit.obj
+-input=DefaultBuild\intvector.obj
+-input=DefaultBuild\DummyInt.obj
+-input=DefaultBuild\Config_ADC.obj
+-input=DefaultBuild\Config_PWM.obj
+-input=DefaultBuild\Config_PORT.obj
+-input=DefaultBuild\Config_OSTM.obj
+-input=DefaultBuild\ADC_Result.obj
+-input=DefaultBuild\Register_Interface.obj
+-input=DefaultBuild\Digital_Input_Read.obj
+-input=DefaultBuild\DigitalFilter.obj
+-input=DefaultBuild\PWM.obj
+-input=DefaultBuild\OpenLoop.obj
+-input=DefaultBuild\AngleConversion.obj
+-input=DefaultBuild\InversePark.obj
+-input=DefaultBuild\InverseClarke.obj
+-input=DefaultBuild\Svpwm.obj
+-input=DefaultBuild\Task_100us.obj
+-input=DefaultBuild\Resolver.obj
+-input=DefaultBuild\Clarke.obj
+-input=DefaultBuild\Park.obj
+-input=DefaultBuild\Torque.obj
+-input=DefaultBuild\Flux.obj
+-input=DefaultBuild\voltage_limiter.obj
+-input=DefaultBuild\Ramp.obj
+-input=DefaultBuild\Speed.obj
+-input=DefaultBuild\Torque_calculation.obj
+-input=DefaultBuild\MTPA.obj
+-input=DefaultBuild\Throttle_mapping.obj
+-input=DefaultBuild\Temperature_calculation.obj
+-input=DefaultBuild\Speed_PI.obj
+-input=DefaultBuild\Sensor_health.obj
+-input=DefaultBuild\SensorRunTime_Monitor.obj
+-input=DefaultBuild\ShortCircuitFault_Monitor.obj
+-input=DefaultBuild\Stall_Protection.obj
+-input=DefaultBuild\Motor_Protection.obj
+-input=DefaultBuild\FaultCheck_Functions.obj
+-debug
+-nocompress
+-NOOPtimize
+-output=DefaultBuild\PVNA_closed_loop_step.abs
+-library=v850e3v5\rhf4n.lib
+-library=v850e3v5\libmalloc.lib
+-list=DefaultBuild\PVNA_closed_loop_step.map
+-show=all
+-start=RESET/0,EIINTTBL.const/00000200,.const,.INIT_DSEC.const,.INIT_BSEC.const,.text,.data/00008000,.data.R,.bss,.stack.bss/FEDE8000
+-rom=.data=.data.R
+-nologo
+-end
+-input=DefaultBuild\PVNA_closed_loop_step.abs
+-output=DefaultBuild\PVNA_closed_loop_step.mot
+-form=stype
+-exit
 
 
 --- SHA1 hash value of output files ---
-C:\Users\SHAMITHA V G\Desktop\PVNA_close_loop_MTPA\PVNA_01_closed_loop_Speed_PI_old_motor_implementation_25_08_2025\PVNA_01\DefaultBuild\PVNA_closed_loop_step.abs: a2d3a35c892c28be33eabf907ab5ffd27fb913ad
-C:\Users\SHAMITHA V G\Desktop\PVNA_close_loop_MTPA\PVNA_01_closed_loop_Speed_PI_old_motor_implementation_25_08_2025\PVNA_01\DefaultBuild\PVNA_closed_loop_step.mot: e80873dc0b0c97292960c153db4663fedc55cb2e
+C:\Users\Shashidhar\Documents\GitHub\8kW_motor_controller\DefaultBuild\PVNA_closed_loop_step.abs: f2e54285dfb429b68d2626751724d81f80cea9aa
+C:\Users\Shashidhar\Documents\GitHub\8kW_motor_controller\DefaultBuild\PVNA_closed_loop_step.mot: 21fe73faa424a4434003037aaaef7f19a6fe31af
 
 
 --- System Information ---
 *OS Version
- Microsoft Windows 10 Pro (-, 10.0.19045, WOW64)
+ Microsoft Windows 11 Pro (-, 10.0.26100, WOW64)
 *Language
  English (United States)
 *.NET Framework Version
- Microsoft .NET Framework 4 [.NET 4.8 or later] (533325)
+ Microsoft .NET Framework 4 [.NET 4.8 or later] (533320)
+*WebView2 Version
+ 140.0.3485.66
 
 --- Application Information ---
 *Product Name
  CS+ for CC
 *Package Version
- V8.09.00  [12 Dec 2022]
+ V8.14.00  [02 Jun 2025]
 *Version
- V9.09.00.06 [12 Dec 2022]
+ V9.14.00.04 [25 Apr 2025]
 *Assembly Version
  3.12.10.1
 *Product License
@@ -33,39 +197,39 @@ C:\Users\SHAMITHA V G\Desktop\PVNA_close_loop_MTPA\PVNA_01_closed_loop_Speed_PI_
  C:\Program Files (x86)\Renesas Electronics\CS+\CC
 *Memory Usage
  *Private Working Set
-  320 MB
+  278 MB
  *Number of GDI Objects
-  2269
+  2415
  *Number of USER Objects
-  1257
+  1355
  *Opened Files
-  14 editors, 14 files, 47 KB
+  25 editors, 25 files, 65 KB
 
 --- Build Tool Plug-in Information ---
 RH850 Build tool CC-RH Plug-in
  *Version
-  V8.09.00.00 [07 Oct 2022]
+  V8.14.00.01 [10 Apr 2025]
  *Assembly Version
   1.1.10.12
  *DLL File Name
   BuildToolCCRH.dll
 RL78 Build tool CC-RL Plug-in
  *Version
-  V8.09.00.01 [07 Oct 2022]
+  V8.14.00.01 [10 Apr 2025]
  *Assembly Version
   1.0.0.0
  *DLL File Name
   BuildToolCCRL.dll
 RX Build tool CC-RX Plug-in
  *Version
-  V8.09.00.00 [07 Oct 2022]
+  V8.14.00.01 [10 Apr 2025]
  *Assembly Version
   3.12.10.1
  *DLL File Name
   BuildToolCCRX.dll
 RH850 Build tool GHS CCRH850 Plug-in
  *Version
-  V1.07.00.00 [07 Oct 2022]
+  V1.11.00.01 [18 Apr 2025]
  *Assembly Version
   1.0.0.0
  *DLL File Name
@@ -74,7 +238,7 @@ RH850 Build tool GHS CCRH850 Plug-in
 --- Debug Tool Plug-in Information ---
 Debugger Collection Plug-in
  *Version
-  V8.09.00.03 [24 Nov 2022]
+  V8.14.00.02 [08 May 2025]
  *Assembly Version
   2.12.10.1
  *DLL File Name
@@ -111,7 +275,7 @@ Debug Console Plug-in
   DebugConsole.dll
 Quick and Effective tool solution - QE
  *Version
-  V9.09.00.01 [18 Oct 2022]
+  V9.14.00.02 [08 Apr 2025]
  *Assembly Version
   1.15.10.16
  *DLL File Name
@@ -125,28 +289,28 @@ Pin Configurator Plug-in
   PinConfig.dll
 Program Analyzer Plug-in
  *Version
-  V4.12.00.01 [14 Apr 2021]
+  V4.13.00.03 [24 May 2023]
  *Assembly Version
   3.12.11.9
  *DLL File Name
   ProgramAnalyzer.dll
 IronPython Console Plug-in
  *Version
-  V1.45.00.03 [22 Nov 2022]
+  V1.49.00.02 [08 Nov 2024]
  *Assembly Version
   1.6.10.23
  *DLL File Name
   PythonConsole.dll
 Editor plug-in DLL
  *Version
-  V1.19.00.01 [24 Oct 2022]
+  V1.21.00.01 [09 Apr 2025]
  *Assembly Version
   1.1.0.0
  *DLL File Name
   SEditor.dll
 Smart Configurator for RH850 Communication Plug-in
  *Version
-  V1.02.08.02 [30 Oct 2023]
+  V1.02.11.01 [08 May 2025]
  *Assembly Version
   1.0.0.0
  *DLL File Name
@@ -160,33 +324,33 @@ Stack Usage Tracer
   Stk.dll
 Update Manager Plug-in
  *Version
-  V2.03.00.02 [29 Oct 2018]
+  V2.05.00.04 [30 May 2025]
  *Assembly Version
-  1.13.6.20
+  1.25.4.17
  *DLL File Name
   Update.dll
 
 Debug Tool Common Interface
  *Version
-  V8.09.00.03 [24 Nov 2022]
+  V8.14.00.02 [08 May 2025]
  *Assembly Version
   3.12.10.1
  *DLL File Name
   CommonDebuggerInterface.dll
 Device Information Common Interface
  *Version
-  V9.09.00.01 [18 Oct 2022]
+  V9.14.00.02 [08 Apr 2025]
  *Assembly Version
   3.0.0.0
  *DLL File Name
   DeviceInformation.dll
 
 --- Main Project Information ---
-C:\Users\SHAMITHA V G\Desktop\PVNA_close_loop_MTPA\PVNA_01_closed_loop_Speed_PI_old_motor_implementation_25_08_2025\PVNA_01\PVNA_closed_loop_step.mtpj
+C:\Users\Shashidhar\Documents\GitHub\8kW_motor_controller\PVNA_closed_loop_step.mtpj
 Microcontroller Information
  *R7F701684
   *File Name: Version
-   RH850_Productlist.xml: V8.090000
+   RH850_Productlist.xml: V8.140000
    R7F701684_common.xml: V1.40.00.XX.XX
    DR7F701684.DVF: V1.40
    -: -
@@ -196,14 +360,14 @@ Microcontroller Information
 Build Tool Information
  *CC-RH
    * Version of plug-in(*.dll)
-     V8.09.00.02 [04 Nov 2022]
+     V8.14.00.02 [10 Apr 2025]
    * The Version of the Compiler Package
-     V2.05.00
+     V2.07.00
   
 
 Debug Tool Information
  *RH850 E2
-  Debugger Library V8.09.00.03 [24 Nov 2022]
+  Debugger Library V8.14.00.02 [08 May 2025]
   
 
 Other Tool Information
@@ -217,7 +381,7 @@ Other Tool Information
 
  *Program Analyzer
   *Version
-   V4.12.00.01 [14 Apr 2021]
+   V4.13.00.03 [24 May 2023]
 
  *Smart Configurator
  *None

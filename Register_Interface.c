@@ -31,6 +31,14 @@ void Current_Feedback(uint16_t *I_a,uint16_t *I_b,uint16_t *I_c )
 
 }
 
+void Voltage_Feedback(uint16_t *V_a,uint16_t *V_b,uint16_t *V_c )
+{
+   *V_a = AC_R_PH_V_CNT;
+   *V_b = AC_Y_PH_V_CNT;
+   *V_c = AC_B_PH_V_CNT;
+
+}
+
 void Get_DC_quantities(uint16_t *dc_V,uint16_t *dc_I )
 {
    *dc_V = DC_BUS_V_CNT;

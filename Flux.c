@@ -23,13 +23,15 @@ extern uint16_t flag1;
 //int16_t F_target_setpoint = 0;
 float ramp_flux_setpoint;
 
+float pi_sum_Flux=0;
+
 int16_t Flux_PI(int16_t iD)
 {
     float Err;
     
     int16_t U;
     float Exc;
-    static float pi_sum_Flux=0;
+
     //flux_setPoint = RampToTarget(F_initial_setpoint,F_target_setpoint);
     //flux_setPoint = ramp_flux_setpoint;
     Err = (int16_t)ramp_flux_setpoint - iD;

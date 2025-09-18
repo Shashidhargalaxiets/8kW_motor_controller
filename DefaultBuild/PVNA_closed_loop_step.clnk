@@ -33,6 +33,12 @@
 -input=DefaultBuild\Throttle_mapping.obj
 -input=DefaultBuild\Temperature_calculation.obj
 -input=DefaultBuild\Speed_PI.obj
+-input=DefaultBuild\Sensor_health.obj
+-input=DefaultBuild\SensorRunTime_Monitor.obj
+-input=DefaultBuild\ShortCircuitFault_Monitor.obj
+-input=DefaultBuild\Stall_Protection.obj
+-input=DefaultBuild\Motor_Protection.obj
+-input=DefaultBuild\FaultCheck_Functions.obj
 -debug
 -nocompress
 -NOOPtimize

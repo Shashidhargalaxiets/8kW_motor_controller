@@ -43,7 +43,12 @@ float theta_in_degree = 0;
 extern int16_t iA_filteredCnt;
 extern int16_t iB_filteredCnt;
 extern int16_t iC_filteredCnt;
-//int16_t iA_off_fil_Cnt[2000];
+
+int16_t VA_filteredCnt;
+int16_t VB_filteredCnt;
+int16_t VC_filteredCnt;
+
+int16_t iA_off_fil_Cnt[2000];
 //int16_t iB_off_fil_Cnt[2000];
 //uint16_t iA_fil_Cnt[2000];
 //uint16_t iB_fil_Cnt[2000];
@@ -52,6 +57,10 @@ extern int16_t iC_filteredCnt;
 uint16_t ac_R_Ph_I_Cnt;
 uint16_t ac_Y_Ph_I_Cnt;
 uint16_t ac_B_Ph_I_Cnt;
+
+uint16_t ac_R_Ph_V_Cnt;
+uint16_t ac_Y_Ph_V_Cnt;
+uint16_t ac_B_Ph_V_Cnt;
 
 uint16_t dc_V_Bus_cnt;
 uint16_t dc_I_Bus_cnt;
@@ -119,6 +128,11 @@ float df_Cof_INV_Temp = 0.2;
 uint16_t per_Inv_R_Ph_Temp_V_DF = 0;
 uint16_t per_Inv_Y_Ph_Temp_V_DF = 0;
 uint16_t per_Inv_B_Ph_Temp_V_DF = 0;
+
+
+
+uint16_t U_FilteredSine_Cnt;
+uint16_t U_FilteredCos_Cnt;
 /**
 ****************************************************************************************************************************
 *	See header file for function definition. 
@@ -130,8 +144,6 @@ void Analog_Read(void)
 	/* variables to get the resolver output*/
         uint16_t U_sineCount;
 	uint16_t U_cosCount;
-	uint16_t U_FilteredSine_Cnt;
-	uint16_t U_FilteredCos_Cnt;
 	
 	int16_t Sine_signed_value;
 	float Sine_signed_value1;
@@ -150,6 +162,15 @@ void Analog_Read(void)
 	static uint16_t Ia_prev_filtered_cnt;
 	static uint16_t Ib_prev_filtered_cnt;
         static uint16_t Ic_prev_filtered_cnt;
+	
+	static uint16_t Va_prev_filtered_cnt;
+	static uint16_t Vb_prev_filtered_cnt;
+	static uint16_t Vc_prev_filtered_cnt;
+
+	/*Phase Voltage*/
+	uint16_t Va_cnt =0;
+	uint16_t Vb_cnt =0;
+	uint16_t Vc_cnt =0;
 	
 	/*DC_Bus quantities*/
 	uint16_t dc_V_Bus; 
@@ -185,6 +206,23 @@ void Analog_Read(void)
 	
 	iC_filteredCnt = ( ac_B_Ph_I_Cnt - W_PHA_I_OFFSET);
 	
+	Voltage_Feedback(&Va_cnt,&Vb_cnt,&Vc_cnt);
+
+	ac_R_Ph_V_Cnt  = (uint16_t)low_pass_filter(Va_cnt, Va_prev_filtered_cnt, 0.2);
+	Va_prev_filtered_cnt = ac_R_Ph_V_Cnt;
+	
+	ac_Y_Ph_V_Cnt  = (uint16_t)low_pass_filter(Vb_cnt, Vb_prev_filtered_cnt, 0.2);
+	Vb_prev_filtered_cnt = ac_Y_Ph_V_Cnt;
+	
+	ac_B_Ph_V_Cnt = (uint16_t)low_pass_filter(Vc_cnt, Vc_prev_filtered_cnt, 0.2);
+	Vc_prev_filtered_cnt = ac_B_Ph_V_Cnt;
+
+	VA_filteredCnt = ( ac_R_Ph_V_Cnt - U_PHA_V_OFFSET);
+	
+	VB_filteredCnt = ( ac_Y_Ph_V_Cnt - V_PHA_V_OFFSET);
+	
+	VC_filteredCnt = ( ac_B_Ph_V_Cnt - W_PHA_V_OFFSET);
+	
 	Get_DC_quantities(&dc_V_Bus,&dc_I_Bus);
 	
 	//DC quantities
@@ -207,6 +245,17 @@ void Analog_Read(void)
 	dc_I_Bus_prev_filtered_cnt = dc_I_Bus_cnt;
 	
 	dc_Bus_I_Cnt = ( dc_I_Bus_cnt - DC_I_OFFSET);							/* Read the Data from Register */
+	
+	dc_I_CTR_SUM += dc_Bus_I_Cnt;
+	dc_I_CTR_Cnt_loop++;
+	if(dc_I_CTR_Cnt_loop >= 5) /* 5 Sample Average */						/* This Average value is used for DC Short circuit Fault Purpose */
+	{
+		dc_I_CTR_Cnt = (int16_t)(dc_I_CTR_SUM / dc_I_CTR_Cnt_loop);
+		dc_I_CTR_Cnt_DF = ((df_Cof_DC_I_CTR * dc_I_CTR_Cnt)+( (1 - df_Cof_DC_I_CTR) * per_DC_I_CTR_Cnt_DF));
+        	per_DC_I_CTR_Cnt_DF = dc_I_CTR_Cnt_DF;
+		dc_I_CTR_Cnt_loop = 0;
+		dc_I_CTR_SUM = 0;
+	}
 	
         dc_I_SUM +=  dc_Bus_I_Cnt;
         dc_I_Cal_CNT++;
@@ -272,7 +321,7 @@ void Analog_Read(void)
 	}
 	RotarTheta = theta_in_degree;
 	//Sine_Theta = sinf(RotarTheta);
-/*	if(count < 2000 && flag1 == 1)
+	if(count < 2000 && flag1 == 1)
 	{       
 		//sine_filtered_array[count] = U_FilteredSine_Cnt;//Sine_signed_value;// U_FilteredSine_Cnt;
 		//cos_filtered_array[count] = U_FilteredCos_Cnt;//Cos_signed_value;// U_FilteredCos_Cnt;
@@ -285,7 +334,7 @@ void Analog_Read(void)
 		//Ib_cnt_raw[count] = Ib_cnt;
 		//iA_fil_Cnt[count] = ac_R_Ph_I_Cnt;
 		//iB_fil_Cnt[count] = ac_Y_Ph_I_Cnt;
-		//iA_off_fil_Cnt[count] = iA_filteredCnt;
+		iA_off_fil_Cnt[count] = iA_filteredCnt;
 		//iB_off_fil_Cnt[count] = iB_filteredCnt;
 	   	//RotarTheta_array[count] = theta_in_degree;
 		
@@ -295,7 +344,7 @@ void Analog_Read(void)
 	{
 		count = 0;
 		flag1 = 0;
-	}*/
+	}
 	
 	
 	R_Config_ADCA0_ScanGroup1_OperationOff();

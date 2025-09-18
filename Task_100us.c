@@ -6,6 +6,8 @@
 #include"Digital_Input_Read.h"
 #include"Speed.h"
 #include"Ramp.h"
+#include "Sensor_health.h"
+#include"flux.h"
 
 #define M_PI 3.14159265358979323846
 extern uint8_t TASK_100us_FLAG;
@@ -90,10 +92,34 @@ extern float torque;
 extern int16_t Power_input;
 uint16_t Speed_PI_counter = 0;
 
+
+extern float pi_sum_Speed;
+extern float pi_sum_Torque;
+extern float pi_sum_Flux;
+
+extern uint8_t Critical_Fault;
+
 void Task_100micro(void)
 {
+	static uint16_t sys_Stabli_Time = 0;
+	
 	if(TASK_100us_FLAG == 1u)
 	{
+		
+		
+	sys_Stabli_Time++;
+	if(sys_Stabli_Time < 500) 
+	{
+		Sensor_Health_Check();
+	}
+	if(sys_Stabli_Time > 2500)
+	{
+		Sensor_Run_Time_Moni();
+		Stall_Protection();
+		Software_Fault_Monitor();
+		Motor_Protection();	
+		sys_Stabli_Time = 2501;
+	}
 	    //Reading Analog Input for resolver
 	    Analog_Read();
 	    
@@ -291,8 +317,21 @@ void Task_100micro(void)
             
 	    //Feeding the output of inverse clarke to SVPWM so that sending the pwm values out of microcontroller
 	    
-	   Svpwm_Duty(OpenLpParam.vA,OpenLpParam.vB,OpenLpParam.vC);
-	    
+		if(Critical_Fault == FAULT)
+		{
+			GPIO_DriverDisable(GD_CONDITION ,6U);
+			PWM_STOP();
+			SpeedParams.speed_setPoint = 0;
+			SpeedParams.Tref = 0;
+			pi_sum_Speed = 0;
+			pi_sum_Torque = 0;
+			pi_sum_Flux = 0;
+			//PORT.P10 = (1 << 10);	//setting pin to high
+		}
+		else
+		{
+		   Svpwm_Duty(OpenLpParam.vA,OpenLpParam.vB,OpenLpParam.vC);
+		}
 	   if((cnt6<=2000)&&(flag1==1))
 	   {
 		torque_array[cnt6] = torque;

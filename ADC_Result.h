@@ -20,6 +20,12 @@
 #define W_PHA_I_OFFSET              2047
 #define DC_I_OFFSET                 2047
 
+/*Have to check offset, below is ideal*/
+#define U_PHA_V_OFFSET              2047
+#define V_PHA_V_OFFSET              2047
+#define W_PHA_V_OFFSET              2047
+
+
 /**
 ****************************************************************************************************************************
 * Function Name: Analog_Read
